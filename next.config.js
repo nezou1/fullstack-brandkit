@@ -1,12 +1,15 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === "production";
 const repoName = "fullstack-brandkit";
-const basePath = isProd ? `/${repoName}` : "";
+const isProd =
+  process.env.NODE_ENV === "production" ||
+  process.env.GITHUB_ACTIONS === "true";
+const basePath = isProd ? "/" + repoName : "";
+const assetPrefix = isProd ? "/" + repoName + "/" : "";
 
 const nextConfig = {
   output: "export",
-  basePath,
-  assetPrefix: isProd ? `/${repoName}/` : "",
+  basePath: basePath,
+  assetPrefix: assetPrefix,
   trailingSlash: true,
   images: { unoptimized: true },
   env: {
