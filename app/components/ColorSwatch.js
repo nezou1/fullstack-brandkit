@@ -8,3 +8,4 @@ export default function ColorSwatch({ color, label, onCopy }) {
     </button>
   );
 }
+
