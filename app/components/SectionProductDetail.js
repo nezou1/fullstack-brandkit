@@ -1,5 +1,6 @@
 import SectionHeader from "./SectionHeader";
 import StarRating from "./StarRating";
+import { assetPath } from "../lib/utils";
 
 export default function SectionProductDetail({ scheme, headingFont, bodyFont, lang, colors }) {
   return (
@@ -10,7 +11,7 @@ export default function SectionProductDetail({ scheme, headingFont, bodyFont, la
         <div className="sm:w-[42%] p-3">
           <div className="relative rounded-lg overflow-hidden bg-gray-50" style={{ paddingBottom: "100%" }}>
             <img
-              src="/placeholder.png"
+              src={assetPath("/placeholder.png")}
               alt=""
               className="absolute inset-0 w-full h-full object-cover"
             />
@@ -21,7 +22,7 @@ export default function SectionProductDetail({ scheme, headingFont, bodyFont, la
               <div key={i} className="w-12 h-12 rounded-md overflow-hidden bg-gray-50" style={{
                 border: i === 0 ? `1.5px solid ${scheme.primary_button_background}` : `1px solid ${scheme.border}`,
               }}>
-                <img src="/placeholder.png" alt="" className="w-full h-full object-cover" />
+                <img src={assetPath("/placeholder.png")} alt="" className="w-full h-full object-cover" />
               </div>
             ))}
           </div>

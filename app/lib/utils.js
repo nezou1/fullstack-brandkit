@@ -1,6 +1,12 @@
 import { MOODS } from "./moods";
 import { FONT_DUOS } from "./fonts";
 
+export function assetPath(path) {
+  const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  const clean = path.startsWith("/") ? path : `/${path}`;
+  return `${base}${clean}`;
+}
+
 export function extractColorsFromImage(img, count = 5) {
   const canvas = document.createElement("canvas");
   const ctx = canvas.getContext("2d");

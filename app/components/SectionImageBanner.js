@@ -1,5 +1,6 @@
 import SectionHeader from "./SectionHeader";
 import StarRating from "./StarRating";
+import { assetPath } from "../lib/utils";
 
 export default function SectionImageBanner({ scheme, headingFont, bodyFont, lang, colors }) {
   return (
@@ -41,7 +42,7 @@ export default function SectionImageBanner({ scheme, headingFont, bodyFont, lang
         {/* Image right */}
         <div className="sm:w-[45%] min-h-[200px] relative bg-gray-50">
           <img
-            src="/placeholder.png"
+            src={assetPath("/placeholder.png")}
             alt=""
             className="absolute inset-0 w-full h-full object-cover"
           />
