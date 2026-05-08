@@ -27,6 +27,7 @@ import Toast from "./components/Toast";
 export default function BrandKit() {
   const [lang, setLang] = useState("fr");
   const [step, setStep] = useState(1);
+  const [maxStep, setMaxStep] = useState(1);
   const [selectedMood, setSelectedMood] = useState(null);
   const [activeMood, setActiveMood] = useState("_default");
   const [selectedStyle, setSelectedStyle] = useState("luxe");
@@ -58,6 +59,7 @@ export default function BrandKit() {
 
   const goStep = (n) => {
     setStep(n);
+    setMaxStep((prev) => Math.max(prev, n));
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -220,6 +222,7 @@ export default function BrandKit() {
   /* Reset */
   const handleReset = () => {
     setStep(1);
+    setMaxStep(1);
     setSelectedMood(null);
     setActiveMood("_default");
     setSelectedStyle("luxe");
@@ -253,7 +256,7 @@ export default function BrandKit() {
         <p className="text-base text-gray-400">{t.subtitle}</p>
       </div>
 
-      <StepBar step={step} lang={lang} totalSteps={4} />
+      <StepBar step={step} lang={lang} totalSteps={4} maxStep={maxStep} onStepClick={goStep} />
 
       {/* ──── STEP 1: Tab system — Import / From scratch ──── */}
       {step === 1 && (
