@@ -357,17 +357,17 @@ export default function BrandKit() {
               <span className="text-xs uppercase tracking-widest text-gray-400 font-medium block mb-2.5">
                 {lang === "fr" ? "Étape 2 — Choisis une ambiance" : "Step 2 — Choose an ambiance"}
               </span>
-              <div className="grid grid-cols-3 gap-2.5">
+              <div className="grid grid-cols-3 gap-2.5 items-stretch">
                 {(AMBIANCES[selectedStyle] || []).map((amb) => (
                   <button key={amb.id} onClick={() => handleAmbiance(amb)}
-                    className={`border rounded-xl p-4 text-left cursor-pointer transition-all bg-white ${selectedAmbiance === amb.id ? "border-[#1a1a1a] ring-2 ring-gray-100" : "border-gray-200 hover:border-[#1a1a1a]"}`}>
+                    className={`border rounded-xl p-4 text-left cursor-pointer transition-all bg-white flex flex-col ${selectedAmbiance === amb.id ? "border-[#1a1a1a] ring-2 ring-gray-100" : "border-gray-200 hover:border-[#1a1a1a]"}`}>
                     <div className="flex gap-0.5 mb-2">
                       {amb.dots.map((c, i) => (
                         <div key={i} className="flex-1 h-6 first:rounded-l-md last:rounded-r-md" style={{ background: c }} />
                       ))}
                     </div>
                     <div className="text-sm font-semibold text-[#1a1a1a] leading-tight">{amb.name[lang]}</div>
-                    <div className="text-xs text-gray-400 mt-1">{amb.sub[lang]}</div>
+                    <div className="text-xs text-gray-400 mt-auto pt-1">{amb.sub[lang]}</div>
                   </button>
                 ))}
               </div>
