@@ -40,6 +40,7 @@ export default function BrandKit() {
   const [defaultScheme, setDefaultScheme] = useState("scheme-1");
   const [enabledSchemes, setEnabledSchemes] = useState(["scheme-1", "scheme-2", "scheme-3", "scheme-4", "scheme-5"]);
   const [showManagement, setShowManagement] = useState(false);
+  const [showCustomizer, setShowCustomizer] = useState(false);
   const [previewScheme, setPreviewScheme] = useState("scheme-1");
   const [themeZip, setThemeZip] = useState(null);
   const [themeStatus, setThemeStatus] = useState("idle"); // idle | processing | done
@@ -232,6 +233,7 @@ export default function BrandKit() {
     setDefaultScheme("scheme-1");
     setEnabledSchemes(["scheme-1", "scheme-2", "scheme-3", "scheme-4", "scheme-5"]);
     setShowManagement(false);
+    setShowCustomizer(false);
     setPreviewScheme("scheme-1");
     setThemeZip(null);
     setThemeStatus("idle");
@@ -470,28 +472,6 @@ export default function BrandKit() {
                 );
               })}
 
-              {/* Divider */}
-              <div className="border-t border-gray-200 my-4" />
-
-              {/* Section 2: Customize selected scheme in detail */}
-              <span className="text-xs uppercase tracking-widest text-gray-400 font-medium block mb-1">
-                {lang === "fr" ? `Personnaliser — ${SCHEME_LABELS[lang][parseInt(previewScheme.split("-")[1]) - 1]?.split(" — ")[0]}` : `Customize — ${SCHEME_LABELS[lang][parseInt(previewScheme.split("-")[1]) - 1]?.split(" — ")[0]}`}
-              </span>
-              <p className="text-xs text-gray-400 mb-3">
-                {lang === "fr"
-                  ? "Assigne tes couleurs ou utilise le + pour une couleur personnalisée"
-                  : "Assign your colors or use + for a custom color"}
-              </p>
-              {MAPPING_ZONES.map((zone) => (
-                <CustomizerZoneRow
-                  key={zone.key}
-                  zone={zone}
-                  value={mapping[previewScheme][zone.key]}
-                  colors={colors}
-                  lang={lang}
-                  onChange={(key, color) => updateMapping(previewScheme, key, color)}
-                />
-              ))}
             </div>
           )}
 
@@ -522,6 +502,40 @@ export default function BrandKit() {
                 </button>
               );
             })}
+          </div>
+
+          {/* Customizer accordion — under scheme cards */}
+          <div className="mb-5">
+            <button onClick={() => setShowCustomizer(!showCustomizer)}
+              className="flex items-center gap-2 text-sm font-medium text-[#1a1a1a] cursor-pointer bg-transparent border-none hover:underline">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+                style={{ transform: showCustomizer ? "rotate(90deg)" : "rotate(0deg)", transition: "transform 0.2s" }}>
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+              {lang === "fr"
+                ? `Personnaliser — ${SCHEME_LABELS[lang][parseInt(previewScheme.split("-")[1]) - 1]?.split(" — ")[0]}`
+                : `Customize — ${SCHEME_LABELS[lang][parseInt(previewScheme.split("-")[1]) - 1]?.split(" — ")[0]}`}
+            </button>
+
+            {showCustomizer && (
+              <div className="mt-3 bg-gray-50 rounded-xl p-4 animate-fadeIn">
+                <p className="text-xs text-gray-400 mb-3">
+                  {lang === "fr"
+                    ? "Assigne tes couleurs ou utilise le + pour une couleur personnalisée"
+                    : "Assign your colors or use + for a custom color"}
+                </p>
+                {MAPPING_ZONES.map((zone) => (
+                  <CustomizerZoneRow
+                    key={zone.key}
+                    zone={zone}
+                    value={mapping[previewScheme][zone.key]}
+                    colors={colors}
+                    lang={lang}
+                    onChange={(key, color) => updateMapping(previewScheme, key, color)}
+                  />
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Preview Live */}
