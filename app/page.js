@@ -124,6 +124,30 @@ export default function BrandKit() {
     }
   }, [colors]);
 
+  /* Restore config from URL params (shared link) */
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const c = params.get("c");
+    if (c) {
+      const parsed = c.split(",").map((h) => "#" + h);
+      if (parsed.length === 5 && parsed.every((h) => /^#[0-9a-fA-F]{6}$/.test(h))) {
+        setColors(parsed);
+        const hf = params.get("hf");
+        const bf = params.get("bf");
+        if (hf) loadGoogleFont(hf);
+        if (bf) loadGoogleFont(bf);
+        if (hf || bf) setFonts({ heading: hf || "Playfair Display", body: bf || "Montserrat" });
+        const en = params.get("en");
+        if (en) setEnabledSchemes(en.split(",").map((n) => `scheme-${n}`));
+        const df = params.get("df");
+        if (df) setDefaultScheme(`scheme-${df}`);
+        setStep(4);
+        setMaxStep(4);
+        window.history.replaceState({}, "", window.location.pathname);
+      }
+    }
+  }, []);
+
   /* Initialize mapping when going to step 2 */
   const goToMapping = () => {
     if (!mapping) setMapping(buildAllSchemes(colors));
@@ -212,11 +236,23 @@ export default function BrandKit() {
     URL.revokeObjectURL(url);
   };
 
-  /* Copy settings */
-  const handleCopySettings = () => {
-    const text = `${t.primaryLabel}: ${colors[0]}\n${t.secondaryLabel}: ${colors[1]}\n${t.accentLabel}: ${colors[2]}\n${t.bgLabel}: ${colors[3]}\n${t.bgAltLabel}: ${colors[4]}\n${t.headingLabel}: ${fonts.heading}\n${t.bodyLabel}: ${fonts.body}`;
-    navigator.clipboard.writeText(text);
-    showToast(t.settingsCopied);
+  /* Share config link */
+  const handleShare = async () => {
+    const params = new URLSearchParams();
+    params.set("c", colors.map((c) => c.replace("#", "")).join(","));
+    params.set("hf", fonts.heading);
+    params.set("bf", fonts.body);
+    params.set("en", enabledSchemes.map((s) => s.split("-")[1]).join(","));
+    params.set("df", defaultScheme.split("-")[1]);
+    const shareUrl = `${window.location.origin}${window.location.pathname}?${params.toString()}`;
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: "FullStack BrandKit", text: lang === "fr" ? "Voici ma config BrandKit :" : "Here's my BrandKit config:", url: shareUrl });
+        return;
+      } catch (e) { /* user cancelled or not supported */ }
+    }
+    await navigator.clipboard.writeText(shareUrl);
+    showToast(t.linkCopied);
   };
 
   /* Reset */
@@ -598,24 +634,61 @@ export default function BrandKit() {
             </div>
           )}
 
-          {/* Summary */}
-          <div className="bg-gray-50 rounded-xl p-5 mt-6 font-mono text-sm leading-relaxed text-[#1a1a1a]">
-            {colors.map((c, i) => (
-              <div key={i} className="flex justify-between py-1">
-                <span className="text-gray-400">{t.colorLabels[i]}</span>
-                <span className="flex items-center gap-2">
-                  <span className="inline-block w-4 h-4 rounded-full border border-gray-200" style={{ background: c }} />
-                  {c}
-                </span>
+          {/* Visual summary — active scheme cards + typo */}
+          {mapping && (
+            <div className="mt-6">
+              <span className="text-xs uppercase tracking-widest text-gray-400 font-medium block mb-3">
+                {lang === "fr" ? "Récapitulatif" : "Summary"}
+              </span>
+              <div className={`grid gap-2 mb-4`} style={{ gridTemplateColumns: `repeat(${enabledSchemes.length}, minmax(0, 1fr))` }}>
+                {enabledSchemes.map((sk) => {
+                  const s = mapping[sk];
+                  const i = parseInt(sk.split("-")[1]) - 1;
+                  const isDefault = defaultScheme === sk;
+                  return (
+                    <div key={sk} className={`border rounded-xl p-3 text-center ${isDefault ? "border-[#1a1a1a] ring-2 ring-gray-100" : "border-gray-200"}`} style={{ background: "#fff" }}>
+                      <div className="flex gap-0.5 mb-2">
+                        <div className="flex-1 h-5 rounded-l-md" style={{ background: s.background, border: s.background === "#ffffff" ? "1px solid #eee" : "none" }} />
+                        <div className="flex-1 h-5" style={{ background: s.foreground }} />
+                        <div className="flex-1 h-5" style={{ background: s.primary_button_background }} />
+                        <div className="flex-1 h-5" style={{ background: s.primary_badge_background }} />
+                        <div className="flex-1 h-5 rounded-r-md" style={{ background: s.secondary_button_border || s.border }} />
+                      </div>
+                      <span className="block text-xs font-semibold text-[#1a1a1a] leading-tight">{SCHEME_LABELS[lang][i]?.split(" — ")[0]}</span>
+                      {isDefault && (
+                        <span className="inline-block text-[10px] mt-1 px-1.5 py-0.5 rounded-full bg-[#1a1a1a] text-white">
+                          {lang === "fr" ? "défaut" : "default"}
+                        </span>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
-            ))}
-            <div className="h-px bg-gray-200 my-2" />
-            <div className="flex justify-between py-1"><span className="text-gray-400">{t.headingLabel}</span><span>{fonts.heading}</span></div>
-            <div className="flex justify-between py-1"><span className="text-gray-400">{t.bodyLabel}</span><span>{fonts.body}</span></div>
-          </div>
+              <div className="bg-gray-50 rounded-xl p-4 flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <span className="text-xl font-semibold" style={{ fontFamily: `'${fonts.heading}', serif` }}>Aa</span>
+                  <div>
+                    <span className="block text-sm font-medium text-[#1a1a1a]">{fonts.heading}</span>
+                    <span className="block text-xs text-gray-400">{lang === "fr" ? "Titres" : "Headings"}</span>
+                  </div>
+                </div>
+                <div className="w-px h-8 bg-gray-200" />
+                <div className="flex items-center gap-3">
+                  <span className="text-lg" style={{ fontFamily: `'${fonts.body}', sans-serif` }}>Aa</span>
+                  <div>
+                    <span className="block text-sm font-medium text-[#1a1a1a]">{fonts.body}</span>
+                    <span className="block text-xs text-gray-400">{lang === "fr" ? "Corps" : "Body"}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
 
           <div className="flex gap-2 mt-6">
-            <button onClick={handleCopySettings} className="flex-1 py-3.5 rounded-xl text-sm font-medium bg-[#1a1a1a] text-white border-none cursor-pointer hover:bg-[#333] transition-colors">{t.copyBtn}</button>
+            <button onClick={handleShare} className="flex-1 py-3.5 rounded-xl text-sm font-medium bg-[#1a1a1a] text-white border-none cursor-pointer hover:bg-[#333] transition-colors flex items-center justify-center gap-2">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="3" r="2" stroke="currentColor" strokeWidth="1.3"/><circle cx="4" cy="8" r="2" stroke="currentColor" strokeWidth="1.3"/><circle cx="12" cy="13" r="2" stroke="currentColor" strokeWidth="1.3"/><path d="M5.8 7l4.4-3M5.8 9l4.4 3" stroke="currentColor" strokeWidth="1.3"/></svg>
+              {t.shareBtn}
+            </button>
             <button onClick={handleReset} className="flex-1 py-3.5 rounded-xl text-sm font-medium bg-white text-[#1a1a1a] border-[1.5px] border-gray-200 cursor-pointer hover:border-[#1a1a1a] transition-colors">{t.resetBtn}</button>
           </div>
         </section>
