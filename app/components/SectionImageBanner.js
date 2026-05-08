@@ -38,15 +38,13 @@ export default function SectionImageBanner({ scheme, headingFont, bodyFont, lang
             </span>
           </div>
         </div>
-        {/* Image placeholder right */}
-        <div className="sm:w-[45%] min-h-[200px] relative" style={{
-          background: `linear-gradient(135deg, ${scheme.primary_button_background}10, ${scheme.primary_button_background}25, ${scheme.primary_button_background}08)`,
-        }}>
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span className="text-xs tracking-wider uppercase" style={{ color: scheme.foreground + "30" }}>
-              {lang === "fr" ? "Image 1920×800" : "Image 1920×800"}
-            </span>
-          </div>
+        {/* Image right */}
+        <div className="sm:w-[45%] min-h-[200px] relative bg-gray-50">
+          <img
+            src="/placeholder.png"
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover"
+          />
         </div>
       </div>
     </div>

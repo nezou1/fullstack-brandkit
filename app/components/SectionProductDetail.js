@@ -8,23 +8,21 @@ export default function SectionProductDetail({ scheme, headingFont, bodyFont, la
       <div className="flex flex-col sm:flex-row" style={{ background: scheme.background }}>
         {/* Product image left */}
         <div className="sm:w-[42%] p-3">
-          <div className="relative rounded-lg overflow-hidden" style={{
-            paddingBottom: "100%",
-            background: `linear-gradient(160deg, ${scheme.primary_button_background}08, ${scheme.primary_button_background}18, ${scheme.primary_button_background}05)`,
-          }}>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <span className="text-xs tracking-wider" style={{ color: scheme.foreground + "25" }}>800×800</span>
-            </div>
+          <div className="relative rounded-lg overflow-hidden bg-gray-50" style={{ paddingBottom: "100%" }}>
+            <img
+              src="/placeholder.png"
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover"
+            />
           </div>
           {/* Thumbnails */}
           <div className="flex gap-1.5 mt-2">
             {[0, 1, 2].map((i) => (
-              <div key={i} className="w-12 h-12 rounded-md" style={{
-                background: i === 0
-                  ? `linear-gradient(135deg, ${scheme.primary_button_background}15, ${scheme.primary_button_background}30)`
-                  : `linear-gradient(135deg, ${scheme.foreground}08, ${scheme.foreground}15)`,
+              <div key={i} className="w-12 h-12 rounded-md overflow-hidden bg-gray-50" style={{
                 border: i === 0 ? `1.5px solid ${scheme.primary_button_background}` : `1px solid ${scheme.border}`,
-              }} />
+              }}>
+                <img src="/placeholder.png" alt="" className="w-full h-full object-cover" />
+              </div>
             ))}
           </div>
         </div>
