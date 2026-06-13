@@ -1,0 +1,2301 @@
+{
+  "sections": {
+    "image_banner_mPqrFB": {
+      "type": "image-banner",
+      "blocks": {
+        "image_banner_qwr9Cj": {
+          "type": "_image-banner",
+          "name": "Bannière image",
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/Fond13_2.jpg",
+            "source": "uploaded",
+            "color_scheme": "scheme-3",
+            "banner_height": "medium",
+            "layout_justify": "center",
+            "layout_align_items": "flex-start",
+            "same_as_desktop": true,
+            "banner_height_mobile": "medium",
+            "layout_justify_mobile": "center",
+            "layout_align_items_mobile": "flex-start",
+            "image_filter_opacity": 15,
+            "image_filter_color": "#000000",
+            "padding_horizontal": 20,
+            "padding_vertical": 40,
+            "padding_horizontal_mobile": 0,
+            "padding_vertical_mobile": 60
+          },
+          "blocks": {
+            "group_cpkqae": {
+              "type": "group",
+              "name": "Groupe",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "wrap_in_card": false,
+                "card_link": "",
+                "color_scheme": "",
+                "show_card_border": false,
+                "layout_type": "flex",
+                "width_desktop": 60,
+                "layout_direction_desktop": "column",
+                "layout_grid_columns_desktop": 3,
+                "layout_gap_desktop": 10,
+                "layout_wrap_desktop": "nowrap",
+                "layout_justify_desktop": "flex-start",
+                "layout_align_items_desktop": "flex-start",
+                "same_as_desktop": false,
+                "width_mobile": 100,
+                "layout_direction_mobile": "column",
+                "layout_grid_columns_mobile": 1,
+                "layout_gap_mobile": 10,
+                "layout_wrap_mobile": "nowrap",
+                "layout_justify_mobile": "flex-start",
+                "layout_align_items_mobile": "flex-start",
+                "use_global_container_padding": true,
+                "padding_horizontal": 30,
+                "padding_vertical": 30,
+                "padding_horizontal_mobile": 30,
+                "padding_vertical_mobile": 30,
+                "margin_top": 10,
+                "margin_bottom": 10,
+                "additional_class": ""
+              },
+              "blocks": {
+                "rating_stars_CEkBMk": {
+                  "type": "rating-stars",
+                  "name": "Étoiles d'avis",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "product": "",
+                    "hide_rating_when_no_reviews": true,
+                    "rating": 4.5,
+                    "show_note": true,
+                    "show_review_count": true,
+                    "review_count": 87,
+                    "link": "",
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "text_d6tRwL": {
+                  "type": "text",
+                  "name": "Texte",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Proposition unique de valeur de la marque</p>",
+                    "text_style": "h2",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "text_tijiK9": {
+                  "type": "text",
+                  "name": "Texte",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Compléter la proposition de valeur en ajoutant quelques arguments clés qui justifient pourquoi choisir [marque] plutôt qu'un concurrent.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "button_4pRjgq": {
+                  "type": "button",
+                  "name": "Bouton",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "label": "Découvrir",
+                    "button_style": "primary",
+                    "button_shape": "default",
+                    "icon": "arrow_forward",
+                    "icon_custom": "",
+                    "icon_position": "end",
+                    "margin_top": 20,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "rating_stars_CEkBMk",
+                "text_d6tRwL",
+                "text_tijiK9",
+                "button_4pRjgq"
+              ]
+            }
+          },
+          "block_order": [
+            "group_cpkqae"
+          ]
+        }
+      },
+      "block_order": [
+        "image_banner_qwr9Cj"
+      ],
+      "name": "Bannière image (pleine largeur)",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "full_width": true,
+        "color_scheme": "",
+        "show_arrows": false,
+        "arrows_button_style": "secondary",
+        "show_pagination": true,
+        "autoplay": false,
+        "rewind": false,
+        "autoplay_speed": 4,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "anchor_id": "",
+        "additional_class": ""
+      }
+    },
+    "demo_design_system_cKtcBq": {
+      "type": "demo-design-system",
+      "blocks": {
+        "accordions-1": {
+          "type": "accordions",
+          "static": true,
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "icon": "caret",
+            "accordion_padding": "small",
+            "dividers": true,
+            "additional_class": ""
+          },
+          "blocks": {
+            "accordion_fCNRLe": {
+              "type": "_accordion",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "heading": "Politique de retour",
+                "heading_tag": "p",
+                "heading_style": "paragraph",
+                "open_by_default": false,
+                "icon": "none",
+                "icon_custom": "",
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_PmqimE": {
+                  "type": "text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Notre objectif est que chaque client soit totalement satisfait de son achat. Si ce n'est pas le cas, faites-le nous savoir et nous ferons de notre mieux pour trouver une solution avec vous.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_PmqimE"
+              ]
+            },
+            "accordion_eyiYXe": {
+              "type": "_accordion",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "heading": "Livraison",
+                "heading_tag": "p",
+                "heading_style": "paragraph",
+                "open_by_default": false,
+                "icon": "none",
+                "icon_custom": "",
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_PVtqWN": {
+                  "type": "text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Nous travaillons rapidement pour envoyer votre commande dès que possible. Une fois votre commande expédiée, vous recevrez un email avec des informations supplémentaires. Les délais de livraison varient en fonction de votre emplacement.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_PVtqWN"
+              ]
+            },
+            "accordion_6ewPrr": {
+              "type": "_accordion",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "heading": "Fabrication",
+                "heading_tag": "p",
+                "heading_style": "paragraph",
+                "open_by_default": false,
+                "icon": "none",
+                "icon_custom": "",
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_DjCheT": {
+                  "type": "text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Nos produits sont fabriqués localement et à l'international. Nous sélectionnons soigneusement nos partenaires de fabrication pour garantir des produits de haute qualité à un prix juste.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_DjCheT"
+              ]
+            }
+          },
+          "block_order": [
+            "accordion_fCNRLe",
+            "accordion_eyiYXe",
+            "accordion_6ewPrr"
+          ]
+        },
+        "popup-1": {
+          "type": "popup",
+          "static": true,
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "color_scheme": "",
+            "button_label": "Guide des tailles",
+            "button_style": "secondary",
+            "button_shape": "default",
+            "icon": "open_in_new",
+            "icon_custom": "",
+            "icon_position": "end",
+            "additional_class": ""
+          },
+          "blocks": {
+            "text_3kz6Yz": {
+              "type": "text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<h3>Guides des tailes</h3>",
+                "text_style": "h3",
+                "paragraph_font_size": "normal",
+                "font_weight": 400,
+                "alignment": "left",
+                "alignment_mobile": "left",
+                "show_read_more": false,
+                "read_more_length": 50,
+                "read_more_text": "Voir plus",
+                "read_less_text": "Voir moins",
+                "truncate": false,
+                "truncate_length": 2,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "text_7ikT3m": {
+              "type": "text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+                "text_style": "paragraph",
+                "paragraph_font_size": "normal",
+                "font_weight": 400,
+                "alignment": "left",
+                "alignment_mobile": "left",
+                "show_read_more": false,
+                "read_more_length": 50,
+                "read_more_text": "Voir plus",
+                "read_less_text": "Voir moins",
+                "truncate": false,
+                "truncate_length": 2,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_3kz6Yz",
+            "text_7ikT3m"
+          ]
+        },
+        "popup-2": {
+          "type": "popup",
+          "static": true,
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "color_scheme": "",
+            "button_label": "Guide des tailles",
+            "button_style": "tertiary",
+            "button_shape": "default",
+            "icon": "open_in_new",
+            "icon_custom": "",
+            "icon_position": "end",
+            "additional_class": ""
+          },
+          "blocks": {
+            "text_LcyTJw": {
+              "type": "text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<h3>Guides des tailes</h3>",
+                "text_style": "h3",
+                "paragraph_font_size": "normal",
+                "font_weight": 400,
+                "alignment": "left",
+                "alignment_mobile": "left",
+                "show_read_more": false,
+                "read_more_length": 50,
+                "read_more_text": "Voir plus",
+                "read_less_text": "Voir moins",
+                "truncate": false,
+                "truncate_length": 2,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "text_kPqcHz": {
+              "type": "text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+                "text_style": "paragraph",
+                "paragraph_font_size": "normal",
+                "font_weight": 400,
+                "alignment": "left",
+                "alignment_mobile": "left",
+                "show_read_more": false,
+                "read_more_length": 50,
+                "read_more_text": "Voir plus",
+                "read_less_text": "Voir moins",
+                "truncate": false,
+                "truncate_length": 2,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_LcyTJw",
+            "text_kPqcHz"
+          ]
+        },
+        "badges-1": {
+          "type": "badges",
+          "static": true,
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "alignment_desktop": "flex-start",
+            "alignment_mobile": "flex-start",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {
+            "badge_UwwKhC": {
+              "type": "_badge",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "Badges primaires",
+                "badge_style": "primary",
+                "icon": "none",
+                "icon_custom": "",
+                "icon_position": "end",
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "badge_HcCH9L": {
+              "type": "_badge",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "Badges secondaires",
+                "badge_style": "secondary",
+                "icon": "none",
+                "icon_custom": "",
+                "icon_position": "end",
+                "additional_class": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "badge_UwwKhC",
+            "badge_HcCH9L"
+          ]
+        },
+        "tabs-demo": {
+          "type": "tabs",
+          "static": true,
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "display_type": "overflowing",
+            "alignment_desktop": "flex-start",
+            "alignment_mobile": "flex-start",
+            "wrap_content_in_card": false,
+            "color_scheme": "",
+            "additional_class": ""
+          },
+          "blocks": {
+            "tab_eUk6H9": {
+              "type": "_tab",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "tab_name": "Onglet 1",
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_bpDqXK": {
+                  "type": "text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Contenu du premier onglet. Ceci est un exemple de texte pour démontrer le fonctionnement des onglets.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_bpDqXK"
+              ]
+            },
+            "tab_Y4mfaE": {
+              "type": "_tab",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "tab_name": "Onglet 2",
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_axEpKC": {
+                  "type": "text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Contenu du deuxième onglet. Le contenu change lorsque l'on clique sur un autre onglet.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_axEpKC"
+              ]
+            },
+            "tab_CH7gDa": {
+              "type": "_tab",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "tab_name": "Onglet 3",
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_8zhzbV": {
+                  "type": "text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Contenu du troisième onglet.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_8zhzbV"
+              ]
+            }
+          },
+          "block_order": [
+            "tab_eUk6H9",
+            "tab_Y4mfaE",
+            "tab_CH7gDa"
+          ]
+        }
+      },
+      "name": "Design System (demo)",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "product": ""
+      }
+    },
+    "collection_featured_9fdFHq": {
+      "type": "collection-featured",
+      "blocks": {
+        "group_4jXELm": {
+          "type": "group",
+          "name": "Groupe",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "wrap_in_card": false,
+            "card_link": "",
+            "color_scheme": "",
+            "show_card_border": false,
+            "layout_type": "flex",
+            "width_desktop": 100,
+            "layout_direction_desktop": "row",
+            "layout_grid_columns_desktop": 3,
+            "layout_gap_desktop": 10,
+            "layout_wrap_desktop": "nowrap",
+            "layout_justify_desktop": "space-between",
+            "layout_align_items_desktop": "center",
+            "same_as_desktop": false,
+            "width_mobile": 100,
+            "layout_direction_mobile": "column",
+            "layout_grid_columns_mobile": 1,
+            "layout_gap_mobile": 10,
+            "layout_wrap_mobile": "nowrap",
+            "layout_justify_mobile": "flex-start",
+            "layout_align_items_mobile": "flex-start",
+            "use_global_container_padding": true,
+            "padding_horizontal": 30,
+            "padding_vertical": 30,
+            "padding_horizontal_mobile": 30,
+            "padding_vertical_mobile": 30,
+            "margin_top": 10,
+            "margin_bottom": 30,
+            "additional_class": ""
+          },
+          "blocks": {
+            "text_qFQUVR": {
+              "type": "text",
+              "name": "Titre",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<p>{{ closest.collection.title }}</p>",
+                "text_style": "h3",
+                "paragraph_font_size": "normal",
+                "font_weight": 400,
+                "alignment": "left",
+                "alignment_mobile": "left",
+                "show_read_more": false,
+                "read_more_length": 50,
+                "read_more_text": "Voir plus",
+                "read_less_text": "Voir moins",
+                "truncate": false,
+                "truncate_length": 2,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "button_xX8QFQ": {
+              "type": "button",
+              "name": "Bouton",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "link": "{{ closest.collection.url }}",
+                "open_in_new_tab": false,
+                "label": "Voir tous",
+                "button_style": "secondary",
+                "button_shape": "small",
+                "icon": "arrow_forward",
+                "icon_custom": "",
+                "icon_position": "end",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_qFQUVR",
+            "button_xX8QFQ"
+          ]
+        },
+        "product-card": {
+          "type": "_product-card",
+          "static": true,
+          "settings": {
+            "wrap_in_card": false,
+            "color_scheme": "",
+            "layout_gap": 15
+          },
+          "blocks": {
+            "product_card_media_gallery_CV3rff": {
+              "type": "_product-card-media-gallery",
+              "name": "Galerie d'images produit",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "show_slider": false,
+                "media_rounded": true,
+                "show_badges": true,
+                "media_ratio": "1 / 1",
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "product_card_group_3bREnK": {
+              "type": "_product-card-group",
+              "name": "Groupe",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "wrap_in_card": false,
+                "color_scheme": "",
+                "layout_direction_desktop": "column",
+                "layout_gap_desktop": 5,
+                "layout_wrap_desktop": "nowrap",
+                "layout_justify_desktop": "flex-start",
+                "layout_align_items_desktop": "flex-start",
+                "same_as_desktop": true,
+                "layout_direction_mobile": "column",
+                "layout_gap_mobile": 10,
+                "layout_wrap_mobile": "nowrap",
+                "layout_justify_mobile": "flex-start",
+                "layout_align_items_mobile": "flex-start",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_7VLd6c": {
+                  "type": "text",
+                  "name": "Texte",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<h2>{{ closest.product.title }}</h2>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 500,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "product_price_hi6Pwx": {
+                  "type": "product-price",
+                  "name": "Prix du produit",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "product": "{{ closest.product }}",
+                    "sales_badge": "amount",
+                    "show_sales_badge_text": false,
+                    "show_unit_price": false,
+                    "text_style": "paragraph",
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "rating_stars_DfRife": {
+                  "type": "rating-stars",
+                  "name": "Étoiles d'avis",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "product": "{{ closest.product }}",
+                    "hide_rating_when_no_reviews": true,
+                    "rating": 4.5,
+                    "show_note": true,
+                    "show_review_count": true,
+                    "review_count": 123,
+                    "link": "",
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "product_card_swatches_t8feTy": {
+                  "type": "_product-card-swatches",
+                  "name": "Pastilles de couleur",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "swatches_size": "small",
+                    "swatches_rounded": true,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_7VLd6c",
+                "product_price_hi6Pwx",
+                "rating_stars_DfRife",
+                "product_card_swatches_t8feTy"
+              ]
+            }
+          },
+          "block_order": [
+            "product_card_media_gallery_CV3rff",
+            "product_card_group_3bREnK"
+          ]
+        }
+      },
+      "block_order": [
+        "group_4jXELm"
+      ],
+      "name": "Collection en vedette",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "color_scheme": "",
+        "collection": "frontpage",
+        "max_products": 8,
+        "layout_type": "slider",
+        "grid_columns": 4,
+        "grid_columns_mobile": "2",
+        "slider_items": 4,
+        "slider_items_mobile": "1.8",
+        "show_arrows": true,
+        "arrows_button_style": "secondary",
+        "show_pagination": false,
+        "rewind": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "anchor_id": "",
+        "additional_class": ""
+      }
+    },
+    "custom_section_fJ9Hg6": {
+      "type": "custom-section",
+      "blocks": {
+        "text_R8eQeR": {
+          "type": "text",
+          "name": "Titre",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "text": "<h2>Qualité et authenticité au cœur de nos valeurs</h2>",
+            "text_style": "h3",
+            "paragraph_font_size": "normal",
+            "font_weight": 400,
+            "alignment": "center",
+            "alignment_mobile": "center",
+            "show_read_more": false,
+            "read_more_length": 50,
+            "read_more_text": "Voir plus",
+            "read_less_text": "Voir moins",
+            "truncate": false,
+            "truncate_length": 2,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "text_wwqgWN": {
+          "type": "text",
+          "name": "Texte",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "text": "<p>Chaque produit est conçu avec soin pour répondre aux attentes, en combinant efficacité et qualité.</p><p><strong>Notre engagement</strong> : Nous sélectionnons les meilleurs ingrédients et matières pour garantir une expérience exceptionnelle. Sans compromis, sans superflu.</p>",
+            "text_style": "paragraph",
+            "paragraph_font_size": "normal",
+            "font_weight": 400,
+            "alignment": "center",
+            "alignment_mobile": "center",
+            "show_read_more": false,
+            "read_more_length": 50,
+            "read_more_text": "Voir plus",
+            "read_less_text": "Voir moins",
+            "truncate": false,
+            "truncate_length": 2,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "button_UfPMV6": {
+          "type": "button",
+          "name": "Bouton",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "link": "",
+            "open_in_new_tab": false,
+            "label": "Découvrir la démarche",
+            "button_style": "primary",
+            "button_shape": "default",
+            "icon": "arrow_forward",
+            "icon_custom": "",
+            "icon_position": "end",
+            "margin_top": 20,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_R8eQeR",
+        "text_wwqgWN",
+        "button_UfPMV6"
+      ],
+      "name": "Citation",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "color_scheme": "scheme-3",
+        "wrap_in_card": false,
+        "color_scheme_card": "",
+        "section_width": "narrow",
+        "layout_type": "flex",
+        "layout_flex_direction_desktop": "column",
+        "layout_grid_columns_desktop": 3,
+        "layout_gap_desktop": 20,
+        "layout_wrap_desktop": "nowrap",
+        "layout_flex_justify_desktop": "center",
+        "layout_flex_align_items_desktop": "center",
+        "same_as_desktop": true,
+        "layout_flex_direction_mobile": "row",
+        "layout_gap_mobile": 20,
+        "layout_wrap_mobile": "nowrap",
+        "layout_flex_justify_mobile": "flex-start",
+        "layout_flex_align_items_mobile": "flex-start",
+        "layout_grid_columns_mobile": 1,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "anchor_id": "",
+        "additional_class": ""
+      }
+    },
+    "custom_section_FMTbQ6": {
+      "type": "custom-section",
+      "blocks": {
+        "group_DdJj8D": {
+          "type": "group",
+          "name": "Groupe",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "wrap_in_card": false,
+            "card_link": "",
+            "color_scheme": "scheme-2",
+            "show_card_border": false,
+            "layout_type": "flex",
+            "width_desktop": 100,
+            "layout_direction_desktop": "column",
+            "layout_grid_columns_desktop": 3,
+            "layout_gap_desktop": 15,
+            "layout_wrap_desktop": "nowrap",
+            "layout_justify_desktop": "flex-start",
+            "layout_align_items_desktop": "flex-start",
+            "same_as_desktop": true,
+            "width_mobile": 100,
+            "layout_direction_mobile": "column",
+            "layout_grid_columns_mobile": 1,
+            "layout_gap_mobile": 10,
+            "layout_wrap_mobile": "nowrap",
+            "layout_justify_mobile": "flex-start",
+            "layout_align_items_mobile": "flex-start",
+            "use_global_container_padding": true,
+            "padding_horizontal": 30,
+            "padding_vertical": 30,
+            "padding_horizontal_mobile": 30,
+            "padding_vertical_mobile": 30,
+            "margin_top": 10,
+            "margin_bottom": 10,
+            "additional_class": ""
+          },
+          "blocks": {
+            "text_BkJ76A": {
+              "type": "text",
+              "name": "Titre",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<h2>Ce qui fait la différence</h2>",
+                "text_style": "h3",
+                "paragraph_font_size": "normal",
+                "font_weight": 400,
+                "alignment": "left",
+                "alignment_mobile": "left",
+                "show_read_more": false,
+                "read_more_length": 50,
+                "read_more_text": "Voir plus",
+                "read_less_text": "Voir moins",
+                "truncate": false,
+                "truncate_length": 2,
+                "margin_top": 0,
+                "margin_bottom": 20,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "group_rgjbwg": {
+              "type": "group",
+              "name": "Groupe",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "wrap_in_card": false,
+                "card_link": "",
+                "color_scheme": "",
+                "show_card_border": false,
+                "layout_type": "flex",
+                "width_desktop": 100,
+                "layout_direction_desktop": "row",
+                "layout_grid_columns_desktop": 3,
+                "layout_gap_desktop": 10,
+                "layout_wrap_desktop": "nowrap",
+                "layout_justify_desktop": "flex-start",
+                "layout_align_items_desktop": "center",
+                "same_as_desktop": true,
+                "width_mobile": 100,
+                "layout_direction_mobile": "column",
+                "layout_grid_columns_mobile": 1,
+                "layout_gap_mobile": 10,
+                "layout_wrap_mobile": "nowrap",
+                "layout_justify_mobile": "flex-start",
+                "layout_align_items_mobile": "flex-start",
+                "use_global_container_padding": true,
+                "padding_horizontal": 30,
+                "padding_vertical": 30,
+                "padding_horizontal_mobile": 30,
+                "padding_vertical_mobile": 30,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {
+                "icon_WGmhDX": {
+                  "type": "icon",
+                  "name": "Icône",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "icon_type": "icon",
+                    "icon": "favorite",
+                    "icon_custom": "",
+                    "icon_size": 24,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "group_9qbxWR": {
+                  "type": "group",
+                  "name": "Groupe",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "wrap_in_card": false,
+                    "card_link": "",
+                    "color_scheme": "",
+                    "show_card_border": false,
+                    "layout_type": "flex",
+                    "width_desktop": 100,
+                    "layout_direction_desktop": "column",
+                    "layout_grid_columns_desktop": 3,
+                    "layout_gap_desktop": 5,
+                    "layout_wrap_desktop": "nowrap",
+                    "layout_justify_desktop": "flex-start",
+                    "layout_align_items_desktop": "flex-start",
+                    "same_as_desktop": true,
+                    "width_mobile": 100,
+                    "layout_direction_mobile": "column",
+                    "layout_grid_columns_mobile": 1,
+                    "layout_gap_mobile": 10,
+                    "layout_wrap_mobile": "nowrap",
+                    "layout_justify_mobile": "flex-start",
+                    "layout_align_items_mobile": "flex-start",
+                    "use_global_container_padding": true,
+                    "padding_horizontal": 30,
+                    "padding_vertical": 30,
+                    "padding_horizontal_mobile": 30,
+                    "padding_vertical_mobile": 30,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {
+                    "text_JJ6bpU": {
+                      "type": "text",
+                      "name": "Titre",
+                      "settings": {
+                        "show_on_display": "desktop_and_mobile",
+                        "text": "<p><strong>Une sélection exigeante</strong></p>",
+                        "text_style": "paragraph",
+                        "paragraph_font_size": "normal",
+                        "font_weight": 400,
+                        "alignment": "left",
+                        "alignment_mobile": "left",
+                        "show_read_more": false,
+                        "read_more_length": 50,
+                        "read_more_text": "Voir plus",
+                        "read_less_text": "Voir moins",
+                        "truncate": false,
+                        "truncate_length": 2,
+                        "margin_top": 0,
+                        "margin_bottom": 0,
+                        "additional_class": ""
+                      },
+                      "blocks": {}
+                    },
+                    "text_jrXwAd": {
+                      "type": "text",
+                      "name": "Texte",
+                      "settings": {
+                        "show_on_display": "desktop_and_mobile",
+                        "text": "<p>Chaque article est choisi pour sa qualité, son origine et sa durabilité. Pas de compromis sur l'essentiel.</p>",
+                        "text_style": "paragraph",
+                        "paragraph_font_size": "normal",
+                        "font_weight": 400,
+                        "alignment": "left",
+                        "alignment_mobile": "left",
+                        "show_read_more": false,
+                        "read_more_length": 50,
+                        "read_more_text": "Voir plus",
+                        "read_less_text": "Voir moins",
+                        "truncate": false,
+                        "truncate_length": 2,
+                        "margin_top": 0,
+                        "margin_bottom": 0,
+                        "additional_class": ""
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_JJ6bpU",
+                    "text_jrXwAd"
+                  ]
+                }
+              },
+              "block_order": [
+                "icon_WGmhDX",
+                "group_9qbxWR"
+              ]
+            },
+            "group_HLxnKw": {
+              "type": "group",
+              "name": "Groupe",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "wrap_in_card": false,
+                "card_link": "",
+                "color_scheme": "",
+                "show_card_border": false,
+                "layout_type": "flex",
+                "width_desktop": 100,
+                "layout_direction_desktop": "row",
+                "layout_grid_columns_desktop": 3,
+                "layout_gap_desktop": 10,
+                "layout_wrap_desktop": "nowrap",
+                "layout_justify_desktop": "flex-start",
+                "layout_align_items_desktop": "center",
+                "same_as_desktop": true,
+                "width_mobile": 100,
+                "layout_direction_mobile": "column",
+                "layout_grid_columns_mobile": 1,
+                "layout_gap_mobile": 10,
+                "layout_wrap_mobile": "nowrap",
+                "layout_justify_mobile": "flex-start",
+                "layout_align_items_mobile": "flex-start",
+                "use_global_container_padding": true,
+                "padding_horizontal": 30,
+                "padding_vertical": 30,
+                "padding_horizontal_mobile": 30,
+                "padding_vertical_mobile": 30,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {
+                "icon_dHDpbt": {
+                  "type": "icon",
+                  "name": "Icône",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "icon_type": "icon",
+                    "icon": "support_agent",
+                    "icon_custom": "",
+                    "icon_size": 24,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "group_GpncAN": {
+                  "type": "group",
+                  "name": "Groupe",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "wrap_in_card": false,
+                    "card_link": "",
+                    "color_scheme": "",
+                    "show_card_border": false,
+                    "layout_type": "flex",
+                    "width_desktop": 100,
+                    "layout_direction_desktop": "column",
+                    "layout_grid_columns_desktop": 3,
+                    "layout_gap_desktop": 5,
+                    "layout_wrap_desktop": "nowrap",
+                    "layout_justify_desktop": "flex-start",
+                    "layout_align_items_desktop": "flex-start",
+                    "same_as_desktop": true,
+                    "width_mobile": 100,
+                    "layout_direction_mobile": "column",
+                    "layout_grid_columns_mobile": 1,
+                    "layout_gap_mobile": 10,
+                    "layout_wrap_mobile": "nowrap",
+                    "layout_justify_mobile": "flex-start",
+                    "layout_align_items_mobile": "flex-start",
+                    "use_global_container_padding": true,
+                    "padding_horizontal": 30,
+                    "padding_vertical": 30,
+                    "padding_horizontal_mobile": 30,
+                    "padding_vertical_mobile": 30,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {
+                    "text_HJH7Ak": {
+                      "type": "text",
+                      "name": "Titre",
+                      "settings": {
+                        "show_on_display": "desktop_and_mobile",
+                        "text": "<p><strong>Un accompagnement réel</strong></p>",
+                        "text_style": "paragraph",
+                        "paragraph_font_size": "normal",
+                        "font_weight": 400,
+                        "alignment": "left",
+                        "alignment_mobile": "left",
+                        "show_read_more": false,
+                        "read_more_length": 50,
+                        "read_more_text": "Voir plus",
+                        "read_less_text": "Voir moins",
+                        "truncate": false,
+                        "truncate_length": 2,
+                        "margin_top": 0,
+                        "margin_bottom": 0,
+                        "additional_class": ""
+                      },
+                      "blocks": {}
+                    },
+                    "text_3fgfcL": {
+                      "type": "text",
+                      "name": "Texte",
+                      "settings": {
+                        "show_on_display": "desktop_and_mobile",
+                        "text": "<p>Service client joignable 24/7, conseils personnalisés, réponse sous 24h ouvrées.</p>",
+                        "text_style": "paragraph",
+                        "paragraph_font_size": "normal",
+                        "font_weight": 400,
+                        "alignment": "left",
+                        "alignment_mobile": "left",
+                        "show_read_more": false,
+                        "read_more_length": 50,
+                        "read_more_text": "Voir plus",
+                        "read_less_text": "Voir moins",
+                        "truncate": false,
+                        "truncate_length": 2,
+                        "margin_top": 0,
+                        "margin_bottom": 0,
+                        "additional_class": ""
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_HJH7Ak",
+                    "text_3fgfcL"
+                  ]
+                }
+              },
+              "block_order": [
+                "icon_dHDpbt",
+                "group_GpncAN"
+              ]
+            },
+            "group_CgVcVW": {
+              "type": "group",
+              "name": "Groupe",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "wrap_in_card": false,
+                "card_link": "",
+                "color_scheme": "",
+                "show_card_border": false,
+                "layout_type": "flex",
+                "width_desktop": 100,
+                "layout_direction_desktop": "row",
+                "layout_grid_columns_desktop": 3,
+                "layout_gap_desktop": 10,
+                "layout_wrap_desktop": "nowrap",
+                "layout_justify_desktop": "flex-start",
+                "layout_align_items_desktop": "center",
+                "same_as_desktop": true,
+                "width_mobile": 100,
+                "layout_direction_mobile": "column",
+                "layout_grid_columns_mobile": 1,
+                "layout_gap_mobile": 10,
+                "layout_wrap_mobile": "nowrap",
+                "layout_justify_mobile": "flex-start",
+                "layout_align_items_mobile": "flex-start",
+                "use_global_container_padding": true,
+                "padding_horizontal": 30,
+                "padding_vertical": 30,
+                "padding_horizontal_mobile": 30,
+                "padding_vertical_mobile": 30,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {
+                "icon_Xbh4TF": {
+                  "type": "icon",
+                  "name": "Icône",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "icon_type": "icon",
+                    "icon": "mode_heat",
+                    "icon_custom": "",
+                    "icon_size": 24,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "group_HeGAJX": {
+                  "type": "group",
+                  "name": "Groupe",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "wrap_in_card": false,
+                    "card_link": "",
+                    "color_scheme": "",
+                    "show_card_border": false,
+                    "layout_type": "flex",
+                    "width_desktop": 100,
+                    "layout_direction_desktop": "column",
+                    "layout_grid_columns_desktop": 3,
+                    "layout_gap_desktop": 5,
+                    "layout_wrap_desktop": "nowrap",
+                    "layout_justify_desktop": "flex-start",
+                    "layout_align_items_desktop": "flex-start",
+                    "same_as_desktop": true,
+                    "width_mobile": 100,
+                    "layout_direction_mobile": "column",
+                    "layout_grid_columns_mobile": 1,
+                    "layout_gap_mobile": 10,
+                    "layout_wrap_mobile": "nowrap",
+                    "layout_justify_mobile": "flex-start",
+                    "layout_align_items_mobile": "flex-start",
+                    "use_global_container_padding": true,
+                    "padding_horizontal": 30,
+                    "padding_vertical": 30,
+                    "padding_horizontal_mobile": 30,
+                    "padding_vertical_mobile": 30,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {
+                    "text_NdVm6W": {
+                      "type": "text",
+                      "name": "Titre",
+                      "settings": {
+                        "show_on_display": "desktop_and_mobile",
+                        "text": "<p><strong>Une promesse tenue</strong></p>",
+                        "text_style": "paragraph",
+                        "paragraph_font_size": "normal",
+                        "font_weight": 400,
+                        "alignment": "left",
+                        "alignment_mobile": "left",
+                        "show_read_more": false,
+                        "read_more_length": 50,
+                        "read_more_text": "Voir plus",
+                        "read_less_text": "Voir moins",
+                        "truncate": false,
+                        "truncate_length": 2,
+                        "margin_top": 0,
+                        "margin_bottom": 0,
+                        "additional_class": ""
+                      },
+                      "blocks": {}
+                    },
+                    "text_giwjz6": {
+                      "type": "text",
+                      "name": "Texte",
+                      "settings": {
+                        "show_on_display": "desktop_and_mobile",
+                        "text": "<p>Livraison rapide, paiement sécurisé, retour accepté sous 30 jours. Sans conditions cachées.</p>",
+                        "text_style": "paragraph",
+                        "paragraph_font_size": "normal",
+                        "font_weight": 400,
+                        "alignment": "left",
+                        "alignment_mobile": "left",
+                        "show_read_more": false,
+                        "read_more_length": 50,
+                        "read_more_text": "Voir plus",
+                        "read_less_text": "Voir moins",
+                        "truncate": false,
+                        "truncate_length": 2,
+                        "margin_top": 0,
+                        "margin_bottom": 0,
+                        "additional_class": ""
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_NdVm6W",
+                    "text_giwjz6"
+                  ]
+                }
+              },
+              "block_order": [
+                "icon_Xbh4TF",
+                "group_HeGAJX"
+              ]
+            },
+            "button_DKTw3F": {
+              "type": "button",
+              "name": "Bouton",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "link": "",
+                "open_in_new_tab": false,
+                "label": "Découvrir la démarche",
+                "button_style": "primary",
+                "button_shape": "default",
+                "icon": "none",
+                "icon_custom": "",
+                "icon_position": "end",
+                "margin_top": 20,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_BkJ76A",
+            "group_rgjbwg",
+            "group_HLxnKw",
+            "group_CgVcVW",
+            "button_DKTw3F"
+          ]
+        },
+        "image_PkikyL": {
+          "type": "image",
+          "name": "Image",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "show_placeholder": true,
+            "link": "",
+            "image_ratio": "adapt",
+            "image_width_desktop": 100,
+            "image_width_mobile": 100,
+            "enable_rounded_corners": true,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "group_DdJj8D",
+        "image_PkikyL"
+      ],
+      "name": "Image avec texte et icônes",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "color_scheme": "scheme-1",
+        "wrap_in_card": false,
+        "color_scheme_card": "",
+        "section_width": "normal",
+        "layout_type": "flex",
+        "layout_flex_direction_desktop": "row",
+        "layout_grid_columns_desktop": 3,
+        "layout_gap_desktop": 30,
+        "layout_wrap_desktop": "nowrap",
+        "layout_flex_justify_desktop": "flex-start",
+        "layout_flex_align_items_desktop": "center",
+        "same_as_desktop": false,
+        "layout_flex_direction_mobile": "column",
+        "layout_gap_mobile": 10,
+        "layout_wrap_mobile": "nowrap",
+        "layout_flex_justify_mobile": "flex-start",
+        "layout_flex_align_items_mobile": "flex-start",
+        "layout_grid_columns_mobile": 1,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "anchor_id": "",
+        "additional_class": ""
+      }
+    },
+    "custom_section_NkHGLz": {
+      "type": "custom-section",
+      "blocks": {
+        "image_mFqbDi": {
+          "type": "image",
+          "name": "Image",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "show_placeholder": true,
+            "link": "",
+            "image_ratio": "adapt",
+            "image_width_desktop": 100,
+            "image_width_mobile": 100,
+            "enable_rounded_corners": true,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "group_DgQq6e": {
+          "type": "group",
+          "name": "Groupe",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "wrap_in_card": false,
+            "card_link": "",
+            "color_scheme": "scheme-2",
+            "show_card_border": false,
+            "layout_type": "flex",
+            "width_desktop": 100,
+            "layout_direction_desktop": "column",
+            "layout_grid_columns_desktop": 3,
+            "layout_gap_desktop": 15,
+            "layout_wrap_desktop": "nowrap",
+            "layout_justify_desktop": "flex-start",
+            "layout_align_items_desktop": "flex-start",
+            "same_as_desktop": true,
+            "width_mobile": 100,
+            "layout_direction_mobile": "column",
+            "layout_grid_columns_mobile": 1,
+            "layout_gap_mobile": 10,
+            "layout_wrap_mobile": "nowrap",
+            "layout_justify_mobile": "flex-start",
+            "layout_align_items_mobile": "flex-start",
+            "use_global_container_padding": true,
+            "padding_horizontal": 30,
+            "padding_vertical": 30,
+            "padding_horizontal_mobile": 30,
+            "padding_vertical_mobile": 30,
+            "margin_top": 10,
+            "margin_bottom": 10,
+            "additional_class": ""
+          },
+          "blocks": {
+            "text_Y894Gj": {
+              "type": "text",
+              "name": "Titre",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<h2>Des résultats prouvés</h2>",
+                "text_style": "h3",
+                "paragraph_font_size": "normal",
+                "font_weight": 400,
+                "alignment": "left",
+                "alignment_mobile": "left",
+                "show_read_more": false,
+                "read_more_length": 200,
+                "read_more_text": "Voir plus",
+                "read_less_text": "Voir moins",
+                "truncate": false,
+                "truncate_length": 2,
+                "margin_top": 0,
+                "margin_bottom": 20,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "group_ck7DhP": {
+              "type": "group",
+              "name": "Résultat (Groupe)",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "wrap_in_card": false,
+                "card_link": "",
+                "color_scheme": "",
+                "show_card_border": false,
+                "layout_type": "flex",
+                "width_desktop": 100,
+                "layout_direction_desktop": "row",
+                "layout_grid_columns_desktop": 3,
+                "layout_gap_desktop": 15,
+                "layout_wrap_desktop": "nowrap",
+                "layout_justify_desktop": "flex-start",
+                "layout_align_items_desktop": "center",
+                "same_as_desktop": true,
+                "width_mobile": 100,
+                "layout_direction_mobile": "column",
+                "layout_grid_columns_mobile": 1,
+                "layout_gap_mobile": 10,
+                "layout_wrap_mobile": "nowrap",
+                "layout_justify_mobile": "flex-start",
+                "layout_align_items_mobile": "flex-start",
+                "use_global_container_padding": true,
+                "padding_horizontal": 30,
+                "padding_vertical": 30,
+                "padding_horizontal_mobile": 30,
+                "padding_vertical_mobile": 30,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_PYPXGd": {
+                  "type": "text",
+                  "name": "Titre",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>100%</p>",
+                    "text_style": "h2",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "text_zGbfUK": {
+                  "type": "text",
+                  "name": "Texte",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Observent un changement sur l'élément clé ciblé.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 500,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 200,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_PYPXGd",
+                "text_zGbfUK"
+              ]
+            },
+            "group_yXUtHB": {
+              "type": "group",
+              "name": "Résultat (Groupe)",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "wrap_in_card": false,
+                "card_link": "",
+                "color_scheme": "",
+                "show_card_border": false,
+                "layout_type": "flex",
+                "width_desktop": 100,
+                "layout_direction_desktop": "row",
+                "layout_grid_columns_desktop": 3,
+                "layout_gap_desktop": 15,
+                "layout_wrap_desktop": "nowrap",
+                "layout_justify_desktop": "flex-start",
+                "layout_align_items_desktop": "center",
+                "same_as_desktop": true,
+                "width_mobile": 100,
+                "layout_direction_mobile": "column",
+                "layout_grid_columns_mobile": 1,
+                "layout_gap_mobile": 10,
+                "layout_wrap_mobile": "nowrap",
+                "layout_justify_mobile": "flex-start",
+                "layout_align_items_mobile": "flex-start",
+                "use_global_container_padding": true,
+                "padding_horizontal": 30,
+                "padding_vertical": 30,
+                "padding_horizontal_mobile": 30,
+                "padding_vertical_mobile": 30,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_Lnw38Y": {
+                  "type": "text",
+                  "name": "Titre",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>97%</p>",
+                    "text_style": "h2",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "text_EJFQ7w": {
+                  "type": "text",
+                  "name": "Texte",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Trouvent que le changement secondaire à eu un effet.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 500,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 200,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_Lnw38Y",
+                "text_EJFQ7w"
+              ]
+            },
+            "group_H3TcJD": {
+              "type": "group",
+              "name": "Résultat (Groupe)",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "wrap_in_card": false,
+                "card_link": "",
+                "color_scheme": "",
+                "show_card_border": false,
+                "layout_type": "flex",
+                "width_desktop": 100,
+                "layout_direction_desktop": "row",
+                "layout_grid_columns_desktop": 3,
+                "layout_gap_desktop": 15,
+                "layout_wrap_desktop": "nowrap",
+                "layout_justify_desktop": "flex-start",
+                "layout_align_items_desktop": "center",
+                "same_as_desktop": true,
+                "width_mobile": 100,
+                "layout_direction_mobile": "column",
+                "layout_grid_columns_mobile": 1,
+                "layout_gap_mobile": 10,
+                "layout_wrap_mobile": "nowrap",
+                "layout_justify_mobile": "flex-start",
+                "layout_align_items_mobile": "flex-start",
+                "use_global_container_padding": true,
+                "padding_horizontal": 30,
+                "padding_vertical": 30,
+                "padding_horizontal_mobile": 30,
+                "padding_vertical_mobile": 30,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_7dg3tx": {
+                  "type": "text",
+                  "name": "Titre",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>95%</p>",
+                    "text_style": "h2",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "text_67Hf9m": {
+                  "type": "text",
+                  "name": "Texte",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Observent une dernière évolution recherchée.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 500,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 200,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_7dg3tx",
+                "text_67Hf9m"
+              ]
+            },
+            "text_7yaQVx": {
+              "type": "text",
+              "name": "Texte",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<p>*test réalisé sur X personnes, après X jours.</p>",
+                "text_style": "paragraph",
+                "paragraph_font_size": "normal",
+                "font_weight": 400,
+                "alignment": "left",
+                "alignment_mobile": "left",
+                "show_read_more": false,
+                "read_more_length": 50,
+                "read_more_text": "Voir plus",
+                "read_less_text": "Voir moins",
+                "truncate": false,
+                "truncate_length": 2,
+                "margin_top": 0,
+                "margin_bottom": 20,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "button_46t7rE": {
+              "type": "button",
+              "name": "Bouton",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "link": "",
+                "open_in_new_tab": false,
+                "label": "En savoir plus",
+                "button_style": "primary",
+                "button_shape": "default",
+                "icon": "none",
+                "icon_custom": "",
+                "icon_position": "end",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_Y894Gj",
+            "group_ck7DhP",
+            "group_yXUtHB",
+            "group_H3TcJD",
+            "text_7yaQVx",
+            "button_46t7rE"
+          ]
+        }
+      },
+      "block_order": [
+        "image_mFqbDi",
+        "group_DgQq6e"
+      ],
+      "name": "Résultats prouvés",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "color_scheme": "scheme-1",
+        "wrap_in_card": false,
+        "color_scheme_card": "",
+        "section_width": "normal",
+        "layout_type": "flex",
+        "layout_flex_direction_desktop": "row",
+        "layout_grid_columns_desktop": 3,
+        "layout_gap_desktop": 30,
+        "layout_wrap_desktop": "nowrap",
+        "layout_flex_justify_desktop": "flex-start",
+        "layout_flex_align_items_desktop": "center",
+        "same_as_desktop": false,
+        "layout_flex_direction_mobile": "column",
+        "layout_gap_mobile": 10,
+        "layout_wrap_mobile": "nowrap",
+        "layout_flex_justify_mobile": "flex-start",
+        "layout_flex_align_items_mobile": "flex-start",
+        "layout_grid_columns_mobile": 1,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "anchor_id": "",
+        "additional_class": ""
+      }
+    },
+    "reviews_j47daG": {
+      "type": "reviews",
+      "blocks": {
+        "review_slide_cHp6Cj": {
+          "type": "_review-slide",
+          "name": "Avis",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "display_type": "1",
+            "wrap_in_card": true,
+            "color_scheme": "scheme-1",
+            "show_card_border": true,
+            "rating": 4.5,
+            "image_ratio": "landscape",
+            "source": "uploaded",
+            "title": "Excellent produit !",
+            "content": "<p>\"Produit à la hauteur, je commande à nouveau.\"</p>",
+            "author": "Camille R.",
+            "date": "Le 11/03/2026",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "review_slide_QrDK8T": {
+          "type": "_review-slide",
+          "name": "Avis",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "display_type": "1",
+            "wrap_in_card": true,
+            "color_scheme": "scheme-1",
+            "show_card_border": true,
+            "rating": 5,
+            "image_ratio": "landscape",
+            "source": "uploaded",
+            "title": "Excellent produit !",
+            "content": "<p>\"Packaging soigné, effet rapide, texture agréable.\"</p>",
+            "author": "Julien M.",
+            "date": "Le 11/03/2026",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "review_slide_7JAxT7": {
+          "type": "_review-slide",
+          "name": "Avis",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "display_type": "1",
+            "wrap_in_card": true,
+            "color_scheme": "scheme-1",
+            "show_card_border": true,
+            "rating": 4.5,
+            "image_ratio": "landscape",
+            "source": "uploaded",
+            "title": "Excellent produit !",
+            "content": "<p>\"Rapport qualité-prix imbattable sur ce segment.\"</p>",
+            "author": "Léa D.",
+            "date": "Le 11/03/2026",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "review_slide_7xtYbm": {
+          "type": "_review-slide",
+          "name": "Avis",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "display_type": "1",
+            "wrap_in_card": true,
+            "color_scheme": "scheme-1",
+            "show_card_border": true,
+            "rating": 5,
+            "image_ratio": "landscape",
+            "source": "uploaded",
+            "title": "Excellent produit !",
+            "content": "<p>\"Service client réactif, livraison en 2 jours.\"</p>",
+            "author": "Paul T.",
+            "date": "Le 11/03/2026",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "review_slide_3iVNYF": {
+          "type": "_review-slide",
+          "name": "Avis",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "display_type": "1",
+            "wrap_in_card": true,
+            "color_scheme": "scheme-1",
+            "show_card_border": true,
+            "rating": 5,
+            "image_ratio": "landscape",
+            "source": "uploaded",
+            "title": "Excellent produit !",
+            "content": "<p>\"Changement visible dès la deuxième semaine.\"</p>",
+            "author": "Inès K.",
+            "date": "Le 11/03/2026",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "review_slide_CVQrCx": {
+          "type": "_review-slide",
+          "name": "Avis",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "display_type": "1",
+            "wrap_in_card": true,
+            "color_scheme": "scheme-1",
+            "show_card_border": true,
+            "rating": 4.5,
+            "image_ratio": "landscape",
+            "source": "uploaded",
+            "title": "Excellent produit !",
+            "content": "<p>\"Je recommande sans hésiter à mes proches.\"</p>",
+            "author": "Marc B.",
+            "date": "Le 11/03/2026",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "title": {
+          "type": "text",
+          "static": true,
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "text": "<h2>Ils l'ont testé, validé et adopté</h2>",
+            "text_style": "h3",
+            "paragraph_font_size": "normal",
+            "font_weight": 400,
+            "alignment": "left",
+            "alignment_mobile": "left",
+            "show_read_more": false,
+            "read_more_length": 50,
+            "read_more_text": "Voir plus",
+            "read_less_text": "Voir moins",
+            "truncate": false,
+            "truncate_length": 2,
+            "margin_top": 0,
+            "margin_bottom": 30,
+            "additional_class": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "review_slide_cHp6Cj",
+        "review_slide_QrDK8T",
+        "review_slide_7JAxT7",
+        "review_slide_7xtYbm",
+        "review_slide_3iVNYF",
+        "review_slide_CVQrCx"
+      ],
+      "name": "Avis (slider)",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "anchor": "reviews",
+        "color_scheme": "scheme-2",
+        "layout_type": "slider",
+        "grid_columns": 4,
+        "grid_columns_mobile": "2",
+        "slider_items": 3,
+        "slider_items_mobile": "1",
+        "show_arrows": false,
+        "arrows_button_style": "secondary",
+        "show_pagination": true,
+        "rewind": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "additional_class": ""
+      }
+    },
+    "custom_section_3g937g": {
+      "type": "custom-section",
+      "blocks": {
+        "text_4Gj9Nc": {
+          "type": "text",
+          "name": "Titre",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "text": "<h2>S'inscrire à la newsletter</h2>",
+            "text_style": "h3",
+            "paragraph_font_size": "normal",
+            "font_weight": 400,
+            "alignment": "center",
+            "alignment_mobile": "center",
+            "show_read_more": false,
+            "read_more_length": 50,
+            "read_more_text": "Voir plus",
+            "read_less_text": "Voir moins",
+            "truncate": false,
+            "truncate_length": 2,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "text_yafz8Q": {
+          "type": "text",
+          "name": "Texte",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "text": "<p>Rejoindre la communauté et recevoir le code promo par email.</p>",
+            "text_style": "paragraph",
+            "paragraph_font_size": "normal",
+            "font_weight": 400,
+            "alignment": "center",
+            "alignment_mobile": "center",
+            "show_read_more": false,
+            "read_more_length": 50,
+            "read_more_text": "Voir plus",
+            "read_less_text": "Voir moins",
+            "truncate": false,
+            "truncate_length": 2,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "group_mPERPC": {
+          "type": "group",
+          "name": "Groupe",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "wrap_in_card": false,
+            "card_link": "",
+            "color_scheme": "",
+            "show_card_border": false,
+            "layout_type": "flex",
+            "width_desktop": 50,
+            "layout_direction_desktop": "column",
+            "layout_grid_columns_desktop": 3,
+            "layout_gap_desktop": 10,
+            "layout_wrap_desktop": "nowrap",
+            "layout_justify_desktop": "center",
+            "layout_align_items_desktop": "center",
+            "same_as_desktop": false,
+            "width_mobile": 100,
+            "layout_direction_mobile": "column",
+            "layout_grid_columns_mobile": 1,
+            "layout_gap_mobile": 10,
+            "layout_wrap_mobile": "nowrap",
+            "layout_justify_mobile": "flex-start",
+            "layout_align_items_mobile": "flex-start",
+            "use_global_container_padding": true,
+            "padding_horizontal": 30,
+            "padding_vertical": 30,
+            "padding_horizontal_mobile": 30,
+            "padding_vertical_mobile": 30,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {
+            "newsletter_signup_QV43dL": {
+              "type": "newsletter-signup",
+              "name": "Inscription newsletter",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "newsletter_label": "Adresse email",
+                "tag": "newsletter",
+                "margin_top": 10,
+                "margin_bottom": 10,
+                "additional_class": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "newsletter_signup_QV43dL"
+          ]
+        }
+      },
+      "block_order": [
+        "text_4Gj9Nc",
+        "text_yafz8Q",
+        "group_mPERPC"
+      ],
+      "name": "Inscription newsletter",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "color_scheme": "",
+        "wrap_in_card": true,
+        "color_scheme_card": "scheme-2",
+        "section_width": "normal",
+        "layout_type": "flex",
+        "layout_flex_direction_desktop": "column",
+        "layout_grid_columns_desktop": 3,
+        "layout_gap_desktop": 20,
+        "layout_wrap_desktop": "nowrap",
+        "layout_flex_justify_desktop": "center",
+        "layout_flex_align_items_desktop": "center",
+        "same_as_desktop": true,
+        "layout_flex_direction_mobile": "row",
+        "layout_gap_mobile": 20,
+        "layout_wrap_mobile": "nowrap",
+        "layout_flex_justify_mobile": "flex-start",
+        "layout_flex_align_items_mobile": "flex-start",
+        "layout_grid_columns_mobile": 1,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "margin_top": 50,
+        "margin_bottom": 50,
+        "anchor_id": "",
+        "additional_class": ""
+      }
+    }
+  },
+  "order": [
+    "image_banner_mPqrFB",
+    "demo_design_system_cKtcBq",
+    "collection_featured_9fdFHq",
+    "custom_section_fJ9Hg6",
+    "custom_section_FMTbQ6",
+    "custom_section_NkHGLz",
+    "reviews_j47daG",
+    "custom_section_3g937g"
+  ]
+}

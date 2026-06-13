@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preview — Skin</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background:#f5f5f5; color:#1a1a1a; }
+  .container { max-width:1100px; margin:0 auto; padding:40px 20px; }
+  .header { text-align:center; margin-bottom:48px; }
+  .header h1 { font-size:36px; font-weight:700; margin-bottom:8px; }
+  .header p { color:#666; font-size:16px; }
+  .badge { display:inline-block; background:#2d2a26; color:#ffffff; padding:4px 12px; border-radius:20px; font-size:12px; font-weight:600; margin-bottom:12px; }
+  
+  h2 { font-size:22px; font-weight:600; margin-bottom:20px; padding-bottom:10px; border-bottom:2px solid #2d2a26; }
+  h3 { font-size:18px; font-weight:600; margin:24px 0 12px; color:#333; }
+  
+  .section { background:#fff; border-radius:16px; padding:32px; margin-bottom:32px; box-shadow:0 1px 3px rgba(0,0,0,0.06); }
+  
+  .schemes-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:16px; }
+  .scheme-card { border-radius:12px; padding:20px; }
+  .scheme-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; }
+  .scheme-label { font-weight:700; font-size:15px; }
+  .scheme-bg-hex { font-size:12px; opacity:0.6; font-family:monospace; }
+  .scheme-colors-row { display:flex; gap:6px; }
+  .color-swatch { width:32px; height:32px; border-radius:6px; border:1px solid rgba(0,0,0,0.1); }
+  
+  .typo-row { display:flex; align-items:baseline; gap:16px; padding:12px 0; border-bottom:1px solid #f0f0f0; }
+  .typo-label { width:140px; font-size:13px; color:#888; flex-shrink:0; }
+  .typo-sample { font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  
+  .ui-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap:8px; }
+  .ui-setting { display:flex; justify-content:space-between; padding:8px 12px; background:#f8f8f8; border-radius:8px; }
+  .ui-label { font-size:13px; color:#666; }
+  .ui-value { font-size:13px; font-weight:600; font-family:monospace; }
+  
+  .sections-list { display:flex; flex-direction:column; gap:2px; }
+  .section-row { display:grid; grid-template-columns:160px 120px 1fr; gap:12px; padding:10px 12px; background:#fafafa; border-radius:6px; align-items:start; }
+  .section-row:nth-child(odd) { background:#f4f4f4; }
+  .section-type { font-weight:600; font-size:13px; color:#2d2a26; }
+  .section-scheme { font-size:12px; color:#888; font-family:monospace; }
+  .section-blocks { font-size:12px; line-height:1.8; }
+  .block-tag { background:#2d2a2615; color:#2d2a26; padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600; }
+  .block-text { color:#666; font-style:italic; }
+  .block-more { color:#999; font-size:11px; }
+  .no-blocks { color:#ccc; font-style:italic; }
+  
+  @media(max-width:768px) {
+    .section-row { grid-template-columns:1fr; }
+    .schemes-grid { grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="badge">FullStack Theme Style</div>
+    <h1>Skin</h1>
+    <p>Preview du style de thème généré</p>
+  </div>
+  
+  <div class="section">
+    <h2>Color Schemes</h2>
+    <div class="schemes-grid">
+    <div class="scheme-card" style="background:#ffffff; color:#2d2a26; border: 1px solid #0000000f">
+      <div class="scheme-header">
+        <span class="scheme-label" style="color:#2d2a26">Scheme 1</span>
+        <span class="scheme-bg-hex">#ffffff</span>
+      </div>
+      <div class="scheme-body">
+        <p style="color:#2d2a26; margin:0 0 8px">Texte principal — #2d2a26</p>
+        <div class="scheme-colors-row">
+          <div class="color-swatch" style="background:#ffffff" title="Background">&nbsp;</div>
+          <div class="color-swatch" style="background:#2d2a26" title="Foreground">&nbsp;</div>
+          <div class="color-swatch" style="background:#c4956a" title="Stars/Icons">&nbsp;</div>
+          <div class="color-swatch" style="background:#0000000f" title="Border">&nbsp;</div>
+        </div>
+        <div style="display:flex; gap:8px; margin-top:12px; flex-wrap:wrap">
+          <button style="background:#2d2a26; color:#ffffff; border:2px solid #2d2a26; padding:8px 16px; border-radius:6px; font-size:13px; cursor:pointer">Bouton primaire</button>
+          <button style="background:#ffffff; color:#2d2a26; border:2px solid #2d2a2630; padding:8px 16px; border-radius:6px; font-size:13px; cursor:pointer">Bouton secondaire</button>
+        </div>
+        <div style="margin-top:10px; display:flex; gap:6px">
+          <span style="background:#2d2a26; color:#ffffff; padding:4px 10px; border-radius:4px; font-size:11px; font-weight:600">Badge</span>
+          <span style="color:#c4956a; font-size:16px">★★★★★</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="scheme-card" style="background:#f7f3ef; color:#2d2a26; border: 1px solid #2d2a2615">
+      <div class="scheme-header">
+        <span class="scheme-label" style="color:#2d2a26">Scheme 2</span>
+        <span class="scheme-bg-hex">#f7f3ef</span>
+      </div>
+      <div class="scheme-body">
+        <p style="color:#2d2a26; margin:0 0 8px">Texte principal — #2d2a26</p>
+        <div class="scheme-colors-row">
+          <div class="color-swatch" style="background:#f7f3ef" title="Background">&nbsp;</div>
+          <div class="color-swatch" style="background:#2d2a26" title="Foreground">&nbsp;</div>
+          <div class="color-swatch" style="background:#c4956a" title="Stars/Icons">&nbsp;</div>
+          <div class="color-swatch" style="background:#2d2a2615" title="Border">&nbsp;</div>
+        </div>
+        <div style="display:flex; gap:8px; margin-top:12px; flex-wrap:wrap">
+          <button style="background:#2d2a26; color:#ffffff; border:2px solid #2d2a26; padding:8px 16px; border-radius:6px; font-size:13px; cursor:pointer">Bouton primaire</button>
+          <button style="background:#ffffff; color:#2d2a26; border:2px solid #2d2a2630; padding:8px 16px; border-radius:6px; font-size:13px; cursor:pointer">Bouton secondaire</button>
+        </div>
+        <div style="margin-top:10px; display:flex; gap:6px">
+          <span style="background:#c4956a; color:#ffffff; padding:4px 10px; border-radius:4px; font-size:11px; font-weight:600">Badge</span>
+          <span style="color:#c4956a; font-size:16px">★★★★★</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="scheme-card" style="background:#2d2a26; color:#ffffff; border: 1px solid #ffffff30">
+      <div class="scheme-header">
+        <span class="scheme-label" style="color:#ffffff">Scheme 3</span>
+        <span class="scheme-bg-hex">#2d2a26</span>
+      </div>
+      <div class="scheme-body">
+        <p style="color:#ffffff; margin:0 0 8px">Texte principal — #ffffff</p>
+        <div class="scheme-colors-row">
+          <div class="color-swatch" style="background:#2d2a26" title="Background">&nbsp;</div>
+          <div class="color-swatch" style="background:#ffffff" title="Foreground">&nbsp;</div>
+          <div class="color-swatch" style="background:#c4956a" title="Stars/Icons">&nbsp;</div>
+          <div class="color-swatch" style="background:#ffffff30" title="Border">&nbsp;</div>
+        </div>
+        <div style="display:flex; gap:8px; margin-top:12px; flex-wrap:wrap">
+          <button style="background:#ffffff; color:#2d2a26; border:2px solid #ffffff; padding:8px 16px; border-radius:6px; font-size:13px; cursor:pointer">Bouton primaire</button>
+          <button style="background:#2d2a26; color:#ffffff; border:2px solid #ffffff60; padding:8px 16px; border-radius:6px; font-size:13px; cursor:pointer">Bouton secondaire</button>
+        </div>
+        <div style="margin-top:10px; display:flex; gap:6px">
+          <span style="background:#c4956a; color:#ffffff; padding:4px 10px; border-radius:4px; font-size:11px; font-weight:600">Badge</span>
+          <span style="color:#c4956a; font-size:16px">★★★★★</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="scheme-card" style="background:#faf5f0; color:#2d2a26; border: 1px solid #e8ddd3">
+      <div class="scheme-header">
+        <span class="scheme-label" style="color:#2d2a26">Scheme 4</span>
+        <span class="scheme-bg-hex">#faf5f0</span>
+      </div>
+      <div class="scheme-body">
+        <p style="color:#2d2a26; margin:0 0 8px">Texte principal — #2d2a26</p>
+        <div class="scheme-colors-row">
+          <div class="color-swatch" style="background:#faf5f0" title="Background">&nbsp;</div>
+          <div class="color-swatch" style="background:#2d2a26" title="Foreground">&nbsp;</div>
+          <div class="color-swatch" style="background:#c4956a" title="Stars/Icons">&nbsp;</div>
+          <div class="color-swatch" style="background:#e8ddd3" title="Border">&nbsp;</div>
+        </div>
+        <div style="display:flex; gap:8px; margin-top:12px; flex-wrap:wrap">
+          <button style="background:#c4956a; color:#ffffff; border:2px solid #c4956a; padding:8px 16px; border-radius:6px; font-size:13px; cursor:pointer">Bouton primaire</button>
+          <button style="background:#ffffff; color:#2d2a26; border:2px solid #e8ddd3; padding:8px 16px; border-radius:6px; font-size:13px; cursor:pointer">Bouton secondaire</button>
+        </div>
+        <div style="margin-top:10px; display:flex; gap:6px">
+          <span style="background:#c4956a; color:#ffffff; padding:4px 10px; border-radius:4px; font-size:11px; font-weight:600">Badge</span>
+          <span style="color:#c4956a; font-size:16px">★★★★★</span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2>Typographie</h2>
+    <p style="color:#888; margin-bottom:16px; font-size:14px">Source : shopify — Titres : Cormorant 6 / Corps : Jost 4</p>
+    <div class="typo-row"><span class="typo-label">H1 — 64px</span><span class="typo-sample" style="font-size:48px">Cormorant 6</span></div><div class="typo-row"><span class="typo-label">H2 — 42px</span><span class="typo-sample" style="font-size:42px">Cormorant 6</span></div><div class="typo-row"><span class="typo-label">H3 — 28px</span><span class="typo-sample" style="font-size:28px">Cormorant 6</span></div><div class="typo-row"><span class="typo-label">H4 — 22px</span><span class="typo-sample" style="font-size:22px">Cormorant 6</span></div><div class="typo-row"><span class="typo-label">Paragraph — 15px</span><span class="typo-sample" style="font-size:15px">Jost 4</span></div>
+  </div>
+  
+  <div class="section">
+    <h2>Paramètres UI</h2>
+    <div class="ui-grid"><div class="ui-setting"><span class="ui-label">Radius</span><span class="ui-value">rounded</span></div><div class="ui-setting"><span class="ui-label">Container padding</span><span class="ui-value">larger</span></div><div class="ui-setting"><span class="ui-label">Icon size</span><span class="ui-value">large</span></div><div class="ui-setting"><span class="ui-label">Icon style</span><span class="ui-value">rounded</span></div><div class="ui-setting"><span class="ui-label">Button weight</span><span class="ui-value">500</span></div><div class="ui-setting"><span class="ui-label">Button case</span><span class="ui-value">uppercase</span></div><div class="ui-setting"><span class="ui-label">Grid H gap</span><span class="ui-value">larger</span></div><div class="ui-setting"><span class="ui-label">Grid V gap</span><span class="ui-value">larger</span></div><div class="ui-setting"><span class="ui-label">Max width</span><span class="ui-value">1400</span></div></div>
+  </div>
+  
+  <div class="section">
+    <h2>Composition des pages</h2>
+    <h3>Homepage (index.json)</h3><div class="sections-list">
+    <div class="section-row">
+      <div class="section-type">image-banner</div>
+      <div class="section-scheme">scheme-1</div>
+      <div class="section-blocks"><span class="block-tag">_image-banner</span> <span class="block-text">Révélez votre beauté naturelle</span></div>
+    </div>
+    
+    <div class="section-row">
+      <div class="section-type">collection-featured</div>
+      <div class="section-scheme">scheme-4</div>
+      <div class="section-blocks"><span class="block-tag">group</span></div>
+    </div>
+    
+    <div class="section-row">
+      <div class="section-type">marquee</div>
+      <div class="section-scheme">default</div>
+      <div class="section-blocks"><span class="block-tag">marquee</span></div>
+    </div>
+    
+    <div class="section-row">
+      <div class="section-type">custom-section</div>
+      <div class="section-scheme">scheme-1</div>
+      <div class="section-blocks"><span class="block-tag">image</span><br><span class="block-tag">group</span></div>
+    </div>
+    
+    <div class="section-row">
+      <div class="section-type">custom-section</div>
+      <div class="section-scheme">scheme-2</div>
+      <div class="section-blocks"><span class="block-tag">text</span> <span class="block-text">Pourquoi nous choisir ?</span><br><span class="block-tag">group</span></div>
+    </div>
+    
+    <div class="section-row">
+      <div class="section-type">custom-section</div>
+      <div class="section-scheme">scheme-3</div>
+      <div class="section-blocks"><span class="block-tag">reviews-badge</span><br><span class="block-tag">text</span> <span class="block-text">Ce que nos clientes disent de nous</span><br><span class="block-tag">slider</span></div>
+    </div>
+    
+    <div class="section-row">
+      <div class="section-type">custom-section</div>
+      <div class="section-scheme">scheme-4</div>
+      <div class="section-blocks"><span class="block-tag">text</span> <span class="block-text">Rejoignez la communauté</span><br><span class="block-tag">text</span><br><span class="block-tag">group</span></div>
+    </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

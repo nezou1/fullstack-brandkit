@@ -15,6 +15,8 @@ import {
 
 import StepBar from "./components/StepBar";
 import LangSwitch from "./components/LangSwitch";
+import AIPalettePanel from "./components/AIPalettePanel";
+import AIFontPanel from "./components/AIFontPanel";
 import PipetteCanvas from "./components/PipetteCanvas";
 import ColorSwatch from "./components/ColorSwatch";
 import FontPairPicker from "./components/FontPairPicker";
@@ -24,6 +26,14 @@ import SectionReassuranceMockup from "./components/SectionReassuranceMockup";
 import CustomizerZoneRow from "./components/CustomizerZoneRow";
 import Toast from "./components/Toast";
 
+const RADIUS_PRESETS = [
+  { id: "sharp",            labelFr: "Pas arrondi",          labelEn: "Not rounded",    svgCardRx: 0,  svgBtnRx: 0 },
+  { id: "sligthly_rounded", labelFr: "Légèrement arrondi",   labelEn: "Slightly",       svgCardRx: 2,  svgBtnRx: 2 },
+  { id: "medium_rounded",   labelFr: "Moyennement arrondi",  labelEn: "Medium",         svgCardRx: 6,  svgBtnRx: 5 },
+  { id: "very_rounded",     labelFr: "Très arrondi",         labelEn: "Very rounded",   svgCardRx: 11, svgBtnRx: 4, isDefault: true },
+  { id: "rounded",          labelFr: "Complètement arrondi", labelEn: "Fully rounded",  svgCardRx: 14, svgBtnRx: 6 },
+];
+
 export default function BrandKit() {
   const [lang, setLang] = useState("fr");
   const [step, setStep] = useState(1);
@@ -32,8 +42,11 @@ export default function BrandKit() {
   const [activeMood, setActiveMood] = useState("_default");
   const [selectedStyle, setSelectedStyle] = useState("luxe");
   const [selectedAmbiance, setSelectedAmbiance] = useState(null);
-  const [step1Tab, setStep1Tab] = useState("scratch"); // "import" | "scratch"
+  const [step1Tab, setStep1Tab] = useState("scratch"); // "import" | "scratch" | "ai"
+  const [step3Tab, setStep3Tab] = useState("predefined"); // "predefined" | "ai"
   const [fontDuoIdx, setFontDuoIdx] = useState(0);
+  const [aiPaletteApplied, setAiPaletteApplied] = useState(false);
+  const [aiFontApplied, setAiFontApplied] = useState(false);
   const [imageSrc, setImageSrc] = useState(null);
   const [colors, setColors] = useState(["#ccc", "#ccc", "#ccc", "#ccc", "#ccc"]);
   const [fonts, setFonts] = useState({ heading: "Playfair Display", body: "Montserrat" });
@@ -47,6 +60,11 @@ export default function BrandKit() {
   const [themeStatus, setThemeStatus] = useState("idle"); // idle | processing | done
   const [toast, setToast] = useState("");
   const [isDragging, setIsDragging] = useState(false);
+  const [selectedPreset, setSelectedPreset] = useState("very_rounded");
+  const [generalRadius, setGeneralRadius] = useState("very_rounded");
+  const [iconStyle, setIconStyle] = useState("sharp");
+  const [iconFill, setIconFill] = useState(false);
+  const [iconWeight, setIconWeight] = useState(300);
   const fileRef = useRef(null);
   const themeFileRef = useRef(null);
 
@@ -98,6 +116,38 @@ export default function BrandKit() {
     goStep(2);
   };
 
+  /* AI palette selection */
+  const handleAIPaletteSelect = (newColors) => {
+    setColors(newColors);
+    const detectedMood = detectMoodFromColors(newColors);
+    setActiveMood(detectedMood);
+    setSelectedAmbiance(null);
+    setSelectedMood(detectedMood);
+    setFontDuoIdx(0);
+    const duos = getDuosForMood(detectedMood);
+    if (duos.length) {
+      loadGoogleFont(duos[0].heading);
+      loadGoogleFont(duos[0].body);
+      setFonts({ heading: duos[0].heading, body: duos[0].body });
+    }
+    setMapping(buildAllSchemes(newColors));
+    setAiPaletteApplied(true);
+  };
+
+  /* AI font selection */
+  const handleAIFontSelect = (duo) => {
+    loadGoogleFont(duo.heading);
+    loadGoogleFont(duo.body);
+    setFonts({ heading: duo.heading, body: duo.body });
+    setAiFontApplied(true);
+  };
+
+  /* Applique un preset d'arrondis */
+  const applyRadiusPreset = (preset) => {
+    setSelectedPreset(preset.id);
+    setGeneralRadius(preset.id);
+  };
+
   /* Ambiance selection (new) */
   const handleAmbiance = (ambiance) => {
     setSelectedAmbiance(ambiance.id);
@@ -141,8 +191,8 @@ export default function BrandKit() {
         if (en) setEnabledSchemes(en.split(",").map((n) => `scheme-${n}`));
         const df = params.get("df");
         if (df) setDefaultScheme(`scheme-${df}`);
-        setStep(4);
-        setMaxStep(4);
+        setStep(5);
+        setMaxStep(5);
         window.history.replaceState({}, "", window.location.pathname);
       }
     }
@@ -188,6 +238,11 @@ export default function BrandKit() {
       // Inject enabled color schemes (only enabled ones)
       // Swap default scheme to position 1 so Shopify uses it as the default
       if (mapping) {
+        // Récupère le premier scheme existant comme template pour préserver
+        // TOUS les champs requis par settings_schema (background_gradient, etc.)
+        const baseSchemeValues =
+          Object.values(settings.current?.color_schemes ?? {})[0]?.settings ?? {};
+
         const schemes = {};
         enabledSchemes.forEach((sk) => {
           if (!mapping[sk]) return;
@@ -196,7 +251,8 @@ export default function BrandKit() {
             if (sk === "scheme-1") targetKey = defaultScheme;
             else if (sk === defaultScheme) targetKey = "scheme-1";
           }
-          schemes[targetKey] = { settings: mapping[sk] };
+          // Merge : base d'abord (tous les champs), nos couleurs par-dessus
+          schemes[targetKey] = { settings: { ...baseSchemeValues, ...mapping[sk] } };
         });
         settings.current.color_schemes = schemes;
       }
@@ -213,6 +269,12 @@ export default function BrandKit() {
         settings.current.type_body_font = bodyFont.body;
         settings.current.type_primary_font = bodyFont.body;
       }
+
+      // Inject radius & icons
+      settings.current.general_radius = generalRadius;
+      settings.current.icon_style = iconStyle;
+      settings.current.icon_fill = iconFill;
+      settings.current.icon_weight = iconWeight;
 
       // Write back to ZIP
       zip.file("config/settings_data.json", JSON.stringify(settings, null, 2));
@@ -264,7 +326,10 @@ export default function BrandKit() {
     setSelectedStyle("luxe");
     setSelectedAmbiance(null);
     setStep1Tab("scratch");
+    setStep3Tab("predefined");
     setFontDuoIdx(0);
+    setAiPaletteApplied(false);
+    setAiFontApplied(false);
     setImageSrc(null);
     setColors(["#ccc", "#ccc", "#ccc", "#ccc", "#ccc"]);
     setFonts({ heading: "Playfair Display", body: "Montserrat" });
@@ -276,6 +341,11 @@ export default function BrandKit() {
     setPreviewScheme("scheme-1");
     setThemeZip(null);
     setThemeStatus("idle");
+    setSelectedPreset("very_rounded");
+    setGeneralRadius("very_rounded");
+    setIconStyle("sharp");
+    setIconFill(false);
+    setIconWeight(300);
     if (fileRef.current) fileRef.current.value = "";
     if (themeFileRef.current) themeFileRef.current.value = "";
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -292,22 +362,53 @@ export default function BrandKit() {
         <p className="text-base text-gray-400">{t.subtitle}</p>
       </div>
 
-      <StepBar step={step} lang={lang} totalSteps={4} maxStep={maxStep} onStepClick={goStep} />
+      <StepBar step={step} lang={lang} totalSteps={5} maxStep={maxStep} onStepClick={goStep} />
 
-      {/* ──── STEP 1: Tab system — Import / From scratch ──── */}
+      {/* ──── STEP 1: Tab system — From scratch / Image / AI ──── */}
       {step === 1 && (
         <section className="animate-fadeIn">
-          {/* Tab switcher */}
-          <div className="flex mb-5 border border-gray-200 rounded-xl overflow-hidden">
+          {/* 3 entry cards */}
+          <p className="text-xs uppercase tracking-widest text-gray-400 font-medium mb-3">
+            {lang === "fr" ? "Comment veux-tu choisir tes couleurs ?" : "How do you want to choose your colors?"}
+          </p>
+          <div className="grid grid-cols-3 gap-3 mb-5">
+            {/* Card 1 — Partir de zéro */}
             <button onClick={() => setStep1Tab("scratch")}
-              className={`flex-1 flex items-center justify-center gap-2 py-3.5 text-sm font-medium cursor-pointer transition-all border-none ${step1Tab === "scratch" ? "bg-[#1a1a1a] text-white" : "bg-white text-gray-400 hover:text-[#1a1a1a] hover:bg-gray-50"}`}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-              {lang === "fr" ? "Partir de zéro" : "Start from scratch"}
+              className={`flex flex-col gap-2.5 p-4 rounded-xl border text-left cursor-pointer transition-all bg-white ${step1Tab === "scratch" ? "border-[#1a1a1a] shadow-[0_0_0_1px_#1a1a1a]" : "border-gray-200 hover:border-gray-400"}`}>
+              <div className={`w-7 h-7 rounded-lg flex items-center justify-center transition-colors ${step1Tab === "scratch" ? "bg-[#1a1a1a]" : "bg-gray-100"}`}>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={step1Tab === "scratch" ? "#fff" : "#555"} strokeWidth="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              </div>
+              <div>
+                <div className="text-xs font-semibold text-[#1a1a1a] leading-tight">{lang === "fr" ? "Partir de zéro" : "Start from scratch"}</div>
+                <div className="text-[11px] text-gray-400 mt-0.5 leading-tight">{lang === "fr" ? "Ambiances prédéfinies" : "Predefined palettes"}</div>
+              </div>
             </button>
+
+            {/* Card 2 — Depuis une image */}
             <button onClick={() => setStep1Tab("import")}
-              className={`flex-1 flex items-center justify-center gap-2 py-3.5 text-sm font-medium cursor-pointer transition-all border-none ${step1Tab === "import" ? "bg-[#1a1a1a] text-white" : "bg-white text-gray-400 hover:text-[#1a1a1a] hover:bg-gray-50"}`}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
-              {lang === "fr" ? "Importer une image" : "Import an image"}
+              className={`flex flex-col gap-2.5 p-4 rounded-xl border text-left cursor-pointer transition-all bg-white ${step1Tab === "import" ? "border-[#1a1a1a] shadow-[0_0_0_1px_#1a1a1a]" : "border-gray-200 hover:border-gray-400"}`}>
+              <div className={`w-7 h-7 rounded-lg flex items-center justify-center transition-colors ${step1Tab === "import" ? "bg-[#1a1a1a]" : "bg-gray-100"}`}>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={step1Tab === "import" ? "#fff" : "#555"} strokeWidth="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+              </div>
+              <div>
+                <div className="text-xs font-semibold text-[#1a1a1a] leading-tight">{lang === "fr" ? "Depuis une image" : "From an image"}</div>
+                <div className="text-[11px] text-gray-400 mt-0.5 leading-tight">{lang === "fr" ? "Extrait les couleurs du logo" : "Extract from logo"}</div>
+              </div>
+            </button>
+
+            {/* Card 3 — Guidé par l'IA */}
+            <button onClick={() => setStep1Tab("ai")}
+              className={`flex flex-col gap-2.5 p-4 rounded-xl border text-left cursor-pointer transition-all bg-white ${step1Tab === "ai" ? "border-[#1a1a1a] shadow-[0_0_0_1px_#1a1a1a]" : "border-gray-200 hover:border-gray-400"}`}>
+              <div className="flex items-center gap-1.5">
+                <div className="w-7 h-7 rounded-lg flex items-center justify-center bg-[#1a1a1a]">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.5"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M12 8v4m0 4h.01"/></svg>
+                </div>
+                <span className="text-[10px] font-bold uppercase tracking-wider bg-[#1a1a1a] text-white px-1.5 py-0.5 rounded">IA</span>
+              </div>
+              <div>
+                <div className="text-xs font-semibold text-[#1a1a1a] leading-tight">{lang === "fr" ? "Guidé par l'IA" : "AI-guided"}</div>
+                <div className="text-[11px] text-gray-400 mt-0.5 leading-tight">{lang === "fr" ? "3 questions, palette sur-mesure" : "3 questions, custom palette"}</div>
+              </div>
             </button>
           </div>
 
@@ -411,12 +512,39 @@ export default function BrandKit() {
                 ))}
               </div>
 
-              {/* Preview after ambiance selected */}
-              {selectedAmbiance && (
+              {/* Preview after ambiance selected or AI palette applied */}
+              {(selectedAmbiance || aiPaletteApplied) && (
                 <div className="mt-6 animate-fadeIn">
                   <span className="text-xs uppercase tracking-widest text-gray-400 font-medium block mb-2.5">
                     {lang === "fr" ? "Aperçu" : "Preview"}
                   </span>
+                  <SectionImageBanner
+                    scheme={buildAllSchemes(colors)["scheme-1"]}
+                    headingFont={fonts.heading}
+                    bodyFont={fonts.body}
+                    lang={lang}
+                    colors={colors}
+                  />
+                  <button onClick={() => goStep(2)} className="w-full mt-5 py-3.5 rounded-xl text-sm font-medium bg-[#1a1a1a] text-white border-none cursor-pointer hover:bg-[#333] transition-colors">
+                    {lang === "fr" ? "Continuer" : "Continue"} →
+                  </button>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* ── TAB: Guidé par l'IA ── */}
+          {step1Tab === "ai" && (
+            <div className="animate-fadeIn">
+              <AIPalettePanel onPaletteSelect={handleAIPaletteSelect} lang={lang} defaultOpen />
+              {aiPaletteApplied && (
+                <div className="mt-6 animate-fadeIn">
+                  <span className="text-xs uppercase tracking-widest text-gray-400 font-medium block mb-2.5">
+                    {lang === "fr" ? "Aperçu" : "Preview"}
+                  </span>
+                  <p className="text-xs text-gray-400 mb-2">
+                    ✨ {lang === "fr" ? "Palette générée par l'IA — ajustable à l'étape suivante." : "AI-generated palette — adjustable in the next step."}
+                  </p>
                   <SectionImageBanner
                     scheme={buildAllSchemes(colors)["scheme-1"]}
                     headingFont={fonts.heading}
@@ -437,25 +565,242 @@ export default function BrandKit() {
       {/* ──── STEP 3: Typography ──── */}
       {step === 3 && (
         <section className="animate-fadeIn">
-          <h2 className="text-sm font-medium uppercase tracking-wide text-gray-400 mb-1">{t.fontPickerTitle}</h2>
-          <p className="text-sm text-gray-300 mb-4">{t.fontPickerHint}</p>
-          <FontPairPicker duos={getDuosForMood(activeMood)} selectedIdx={fontDuoIdx} onSelect={(idx) => { setFontDuoIdx(idx); const duo = getDuosForMood(activeMood)[idx]; setFonts({ heading: duo.heading, body: duo.body }); }} lang={lang} />
 
-          {/* Typography preview using Product Detail section */}
-          <span className="text-xs uppercase tracking-widest text-gray-400 font-medium block mb-2.5 mt-6">
-            {t.previewTitle}
-          </span>
-          <SectionProductDetail
-            scheme={mapping ? mapping["scheme-1"] : buildAllSchemes(colors)["scheme-1"]}
-            headingFont={fonts.heading}
-            bodyFont={fonts.body}
-            lang={lang}
-            colors={colors}
-          />
+          {/* 2 entry cards */}
+          <p className="text-xs uppercase tracking-widest text-gray-400 font-medium mb-3">
+            {lang === "fr" ? "Comment veux-tu choisir tes polices ?" : "How do you want to choose your fonts?"}
+          </p>
+          <div className="grid grid-cols-2 gap-3 mb-5">
+            <button onClick={() => setStep3Tab("predefined")}
+              className={`flex flex-col gap-2.5 p-4 rounded-xl border text-left cursor-pointer transition-all bg-white ${step3Tab === "predefined" ? "border-[#1a1a1a] shadow-[0_0_0_1px_#1a1a1a]" : "border-gray-200 hover:border-gray-400"}`}>
+              <div className={`w-7 h-7 rounded-lg flex items-center justify-center transition-colors ${step3Tab === "predefined" ? "bg-[#1a1a1a]" : "bg-gray-100"}`}>
+                <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 13, color: step3Tab === "predefined" ? "#fff" : "#555" }}>Aa</span>
+              </div>
+              <div>
+                <div className="text-xs font-semibold text-[#1a1a1a] leading-tight">{lang === "fr" ? "Duos prédéfinis" : "Predefined duos"}</div>
+                <div className="text-[11px] text-gray-400 mt-0.5 leading-tight">{lang === "fr" ? "Sélectionne parmi nos suggestions" : "Pick from our curated selection"}</div>
+              </div>
+            </button>
+
+            <button onClick={() => setStep3Tab("ai")}
+              className={`flex flex-col gap-2.5 p-4 rounded-xl border text-left cursor-pointer transition-all bg-white ${step3Tab === "ai" ? "border-[#1a1a1a] shadow-[0_0_0_1px_#1a1a1a]" : "border-gray-200 hover:border-gray-400"}`}>
+              <div className="flex items-center gap-1.5">
+                <div className="w-7 h-7 rounded-lg flex items-center justify-center bg-[#1a1a1a]">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.5"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M12 8v4m0 4h.01"/></svg>
+                </div>
+                <span className="text-[10px] font-bold uppercase tracking-wider bg-[#1a1a1a] text-white px-1.5 py-0.5 rounded">IA</span>
+              </div>
+              <div>
+                <div className="text-xs font-semibold text-[#1a1a1a] leading-tight">{lang === "fr" ? "Guidé par l'IA" : "AI-guided"}</div>
+                <div className="text-[11px] text-gray-400 mt-0.5 leading-tight">{lang === "fr" ? "L'IA choisit selon ton univers" : "AI picks based on your brand"}</div>
+              </div>
+            </button>
+          </div>
+
+          {/* Tab: duos prédéfinis */}
+          {step3Tab === "predefined" && (
+            <FontPairPicker
+              duos={getDuosForMood(activeMood)}
+              selectedIdx={fontDuoIdx}
+              onSelect={(idx) => {
+                setFontDuoIdx(idx);
+                const duo = getDuosForMood(activeMood)[idx];
+                setFonts({ heading: duo.heading, body: duo.body });
+                setAiFontApplied(false);
+              }}
+              lang={lang}
+            />
+          )}
+
+          {/* Tab: IA */}
+          {step3Tab === "ai" && (
+            <AIFontPanel onFontSelect={handleAIFontSelect} lang={lang} defaultOpen />
+          )}
+
+          {/* Preview — toujours visible, label indique le duo actif */}
+          <div className="mt-6 animate-fadeIn">
+            <div className="flex items-center justify-between mb-2.5">
+              <span className="text-xs uppercase tracking-widest text-gray-400 font-medium">
+                {lang === "fr" ? "Aperçu" : "Preview"}
+              </span>
+              <span className="text-[11px] text-gray-400 flex items-center gap-1">
+                {aiFontApplied && <span className="text-[10px] font-bold uppercase tracking-wider bg-[#1a1a1a] text-white px-1.5 py-0.5 rounded">IA</span>}
+                <span style={{ fontFamily: `'${fonts.heading}', serif` }}>{fonts.heading}</span>
+                <span className="text-gray-300">+</span>
+                <span style={{ fontFamily: `'${fonts.body}', sans-serif` }}>{fonts.body}</span>
+              </span>
+            </div>
+            <SectionProductDetail
+              scheme={mapping ? mapping["scheme-1"] : buildAllSchemes(colors)["scheme-1"]}
+              headingFont={fonts.heading}
+              bodyFont={fonts.body}
+              lang={lang}
+              colors={colors}
+            />
+          </div>
 
           <div className="flex gap-2 mt-8">
             <button onClick={() => goStep(2)} className="flex-1 py-3.5 rounded-xl text-sm font-medium bg-white text-[#1a1a1a] border-[1.5px] border-gray-200 cursor-pointer hover:border-[#1a1a1a] transition-colors">← {t.step2}</button>
-            <button onClick={() => goStep(4)} className="flex-1 py-3.5 rounded-xl text-sm font-medium bg-[#1a1a1a] text-white border-none cursor-pointer hover:bg-[#333] transition-colors">{t.step4} →</button>
+            <button onClick={() => goStep(4)} className="flex-1 py-3.5 rounded-xl text-sm font-medium bg-[#1a1a1a] text-white border-none cursor-pointer hover:bg-[#333] transition-colors">
+              {lang === "fr" ? "Forme & icônes" : "Shape & icons"} →
+            </button>
+          </div>
+        </section>
+      )}
+
+      {/* ──── STEP 4: Forme & icônes ──── */}
+      {step === 4 && (
+        <section className="animate-fadeIn">
+          <h2 className="text-sm font-medium uppercase tracking-wide text-gray-400 mb-1">
+            {lang === "fr" ? "Forme & icônes" : "Shape & icons"}
+          </h2>
+          <p className="text-sm text-gray-300 mb-5">
+            {lang === "fr"
+              ? "Choisissez le style d'arrondi général de votre boutique."
+              : "Choose the overall roundness of your store."}
+          </p>
+
+          {/* — Arrondis : 5 presets — */}
+          <span className="text-xs uppercase tracking-widest text-gray-400 font-medium block mb-3">
+            {lang === "fr" ? "Arrondis" : "Roundings"}
+          </span>
+          <div className="grid grid-cols-5 gap-2 mb-6">
+            {RADIUS_PRESETS.map((preset) => {
+              const accent = colors[0] !== "#ccc" ? colors[0] : "#1a1a1a";
+              const bg     = colors[3] !== "#ccc" ? colors[3] : "#f0f0f0";
+              const isSelected = selectedPreset === preset.id;
+              return (
+                <button
+                  key={preset.id}
+                  onClick={() => applyRadiusPreset(preset)}
+                  className={`border rounded-xl p-3 text-left cursor-pointer transition-all bg-white flex flex-col gap-2 ${
+                    isSelected ? "border-[#1a1a1a] ring-2 ring-gray-100" : "border-gray-200 hover:border-[#1a1a1a]"
+                  }`}
+                >
+                  <svg viewBox="0 0 50 44" width="100%" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0" y="0" width="50" height="28" rx={preset.svgCardRx} fill={bg} />
+                    <rect x="0" y="32" width="50" height="12" rx={preset.svgBtnRx} fill={accent} />
+                  </svg>
+                  <div>
+                    <span className="block text-[11px] font-semibold text-[#1a1a1a] leading-tight">
+                      {lang === "fr" ? preset.labelFr : preset.labelEn}
+                    </span>
+                    {preset.isDefault && (
+                      <span className="block text-[10px] text-gray-400 mt-0.5">
+                        {lang === "fr" ? "défaut" : "default"}
+                      </span>
+                    )}
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+
+          {/* — Icônes — */}
+          <span className="text-xs uppercase tracking-widest text-gray-400 font-medium block mb-3">
+            {lang === "fr" ? "Icônes" : "Icons"}
+          </span>
+          <div className="border border-gray-200 rounded-xl p-4 bg-white mb-6 space-y-4">
+            {/* icon_style */}
+            <div>
+              <span className="block text-xs text-gray-400 mb-2">
+                {lang === "fr" ? "Arrondis des icônes" : "Icon roundness"}
+              </span>
+              <div className="flex gap-2">
+                {[
+                  { val: "sharp",    labelFr: "Pas arrondi",  labelEn: "Square",       cap: "square", join: "miter" },
+                  { val: "outlined", labelFr: "Semi-arrondi", labelEn: "Semi-rounded", cap: "butt",   join: "round" },
+                  { val: "rounded",  labelFr: "Arrondi",      labelEn: "Rounded",      cap: "round",  join: "round" },
+                ].map((opt) => (
+                  <button
+                    key={opt.val}
+                    onClick={() => setIconStyle(opt.val)}
+                    className={`flex-1 flex flex-col items-center gap-1.5 py-2.5 rounded-xl border text-xs font-medium cursor-pointer transition-all ${
+                      iconStyle === opt.val
+                        ? "bg-[#1a1a1a] text-white border-[#1a1a1a]"
+                        : "bg-white text-gray-500 border-gray-200 hover:border-[#1a1a1a]"
+                    }`}
+                  >
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" strokeWidth="1.5"
+                      strokeLinecap={opt.cap} strokeLinejoin={opt.join}>
+                      <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+                      <line x1="3" y1="6" x2="21" y2="6"/>
+                      <path d="M16 10a4 4 0 01-8 0"/>
+                    </svg>
+                    {lang === "fr" ? opt.labelFr : opt.labelEn}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* icon_fill */}
+            <div>
+              <span className="block text-xs text-gray-400 mb-2">
+                {lang === "fr" ? "Remplir les icônes" : "Fill icons"}
+              </span>
+              <div className="flex gap-2">
+                {[
+                  { val: false, labelFr: "Contour", labelEn: "Outlined" },
+                  { val: true,  labelFr: "Rempli",  labelEn: "Filled"   },
+                ].map((opt) => (
+                  <button
+                    key={String(opt.val)}
+                    onClick={() => setIconFill(opt.val)}
+                    className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl border text-sm font-medium cursor-pointer transition-all ${
+                      iconFill === opt.val
+                        ? "bg-[#1a1a1a] text-white border-[#1a1a1a]"
+                        : "bg-white text-gray-500 border-gray-200 hover:border-[#1a1a1a]"
+                    }`}
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24"
+                      fill={opt.val ? "currentColor" : "none"}
+                      stroke={opt.val ? "none" : "currentColor"}
+                      strokeWidth="1.5" strokeLinecap="round">
+                      <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                    </svg>
+                    {lang === "fr" ? opt.labelFr : opt.labelEn}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* icon_weight */}
+            <div>
+              <span className="block text-xs text-gray-400 mb-2">
+                {lang === "fr" ? "Épaisseur des icônes" : "Icon weight"}
+              </span>
+              <div className="flex gap-2">
+                {[
+                  { val: 200, labelFr: "Fin",      labelEn: "Thin"   },
+                  { val: 300, labelFr: "Normal",    labelEn: "Normal" },
+                  { val: 400, labelFr: "Gras",      labelEn: "Bold"   },
+                  { val: 500, labelFr: "Très gras", labelEn: "Heavy"  },
+                ].map((opt) => (
+                  <button
+                    key={opt.val}
+                    onClick={() => setIconWeight(opt.val)}
+                    className={`flex-1 flex flex-col items-center gap-1 py-2.5 rounded-xl border text-xs cursor-pointer transition-all ${
+                      iconWeight === opt.val
+                        ? "bg-[#1a1a1a] text-white border-[#1a1a1a]"
+                        : "bg-white text-gray-500 border-gray-200 hover:border-[#1a1a1a]"
+                    }`}
+                  >
+                    <span style={{ fontWeight: opt.val, fontSize: 16, lineHeight: 1 }}>Aa</span>
+                    <span>{lang === "fr" ? opt.labelFr : opt.labelEn}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="flex gap-2 mt-8">
+            <button onClick={() => goStep(3)} className="flex-1 py-3.5 rounded-xl text-sm font-medium bg-white text-[#1a1a1a] border-[1.5px] border-gray-200 cursor-pointer hover:border-[#1a1a1a] transition-colors">
+              ← {lang === "fr" ? "Typographie" : "Typography"}
+            </button>
+            <button onClick={() => goStep(5)} className="flex-1 py-3.5 rounded-xl text-sm font-medium bg-[#1a1a1a] text-white border-none cursor-pointer hover:bg-[#333] transition-colors">
+              {lang === "fr" ? "Exporter" : "Export"} →
+            </button>
           </div>
         </section>
       )}
@@ -597,8 +942,8 @@ export default function BrandKit() {
         </section>
       )}
 
-      {/* ──── STEP 4: Theme Export ──── */}
-      {step === 4 && (
+      {/* ──── STEP 5: Theme Export ──── */}
+      {step === 5 && (
         <section className="animate-fadeIn">
           <h2 className="text-sm font-medium uppercase tracking-wide text-gray-400 mb-1">{t.themeTitle}</h2>
           <p className="text-sm text-gray-300 mb-4">{t.themeHint}</p>
@@ -685,11 +1030,14 @@ export default function BrandKit() {
           )}
 
           <div className="flex gap-2 mt-6">
+            <button onClick={() => goStep(4)} className="py-3.5 px-4 rounded-xl text-sm font-medium bg-white text-[#1a1a1a] border-[1.5px] border-gray-200 cursor-pointer hover:border-[#1a1a1a] transition-colors">
+              ← {lang === "fr" ? "Forme" : "Shape"}
+            </button>
             <button onClick={handleShare} className="flex-1 py-3.5 rounded-xl text-sm font-medium bg-[#1a1a1a] text-white border-none cursor-pointer hover:bg-[#333] transition-colors flex items-center justify-center gap-2">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="3" r="2" stroke="currentColor" strokeWidth="1.3"/><circle cx="4" cy="8" r="2" stroke="currentColor" strokeWidth="1.3"/><circle cx="12" cy="13" r="2" stroke="currentColor" strokeWidth="1.3"/><path d="M5.8 7l4.4-3M5.8 9l4.4 3" stroke="currentColor" strokeWidth="1.3"/></svg>
               {t.shareBtn}
             </button>
-            <button onClick={handleReset} className="flex-1 py-3.5 rounded-xl text-sm font-medium bg-white text-[#1a1a1a] border-[1.5px] border-gray-200 cursor-pointer hover:border-[#1a1a1a] transition-colors">{t.resetBtn}</button>
+            <button onClick={handleReset} className="py-3.5 px-4 rounded-xl text-sm font-medium bg-white text-[#1a1a1a] border-[1.5px] border-gray-200 cursor-pointer hover:border-[#1a1a1a] transition-colors">{t.resetBtn}</button>
           </div>
         </section>
       )}

@@ -1,0 +1,930 @@
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "text_QE8Lc7": {
+          "type": "text",
+          "name": "t:title",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "text": "<p>{{ closest.page.title }}</p>",
+            "text_style": "h2",
+            "paragraph_font_size": "normal",
+            "font_weight": 400,
+            "alignment": "center",
+            "alignment_mobile": "center",
+            "show_read_more": false,
+            "read_more_length": 50,
+            "read_more_text": "Voir plus",
+            "read_less_text": "Voir moins",
+            "truncate": false,
+            "truncate_length": 2,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "text_LXnWMw": {
+          "type": "text",
+          "name": "Contenu",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "text": "{{ closest.page.content }}",
+            "text_style": "paragraph",
+            "paragraph_font_size": "normal",
+            "font_weight": 400,
+            "alignment": "left",
+            "alignment_mobile": "left",
+            "show_read_more": false,
+            "read_more_length": 50,
+            "read_more_text": "Voir plus",
+            "read_less_text": "Voir moins",
+            "truncate": false,
+            "truncate_length": 2,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_QE8Lc7",
+        "text_LXnWMw"
+      ],
+      "settings": {
+        "color_scheme": "scheme-bd470296-2415-4358-a0cc-2b9fd805ffec",
+        "wrap_in_card": false,
+        "color_scheme_card": "",
+        "hide_header_and_footer": false,
+        "section_width": "narrow",
+        "layout_type": "flex",
+        "layout_flex_direction_desktop": "column",
+        "layout_grid_columns_desktop": 3,
+        "layout_gap_desktop": 20,
+        "layout_wrap_desktop": "nowrap",
+        "layout_flex_justify_desktop": "flex-start",
+        "layout_flex_align_items_desktop": "flex-start",
+        "same_as_desktop": true,
+        "layout_flex_direction_mobile": "row",
+        "layout_gap_mobile": 20,
+        "layout_wrap_mobile": "nowrap",
+        "layout_flex_justify_mobile": "flex-start",
+        "layout_flex_align_items_mobile": "flex-start",
+        "layout_grid_columns_mobile": 1,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "custom_section_xfGyrj": {
+      "type": "custom-section",
+      "blocks": {
+        "text_bcFqQC": {
+          "type": "text",
+          "name": "t:title",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "text": "<h3>Question sur xyz</h3>",
+            "text_style": "h3",
+            "paragraph_font_size": "normal",
+            "font_weight": 400,
+            "alignment": "center",
+            "alignment_mobile": "left",
+            "show_read_more": false,
+            "read_more_length": 50,
+            "read_more_text": "Voir plus",
+            "read_less_text": "Voir moins",
+            "truncate": false,
+            "truncate_length": 2,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "accordions_HRM9nq": {
+          "type": "accordions",
+          "name": "t:accordions",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "icon": "caret",
+            "accordion_padding": "medium",
+            "dividers": true,
+            "additional_class": ""
+          },
+          "blocks": {
+            "accordion_ceYJJq": {
+              "type": "_accordion",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "heading": "Politique de retour",
+                "heading_tag": "p",
+                "heading_style": "paragraph",
+                "open_by_default": false,
+                "icon": "none",
+                "icon_custom": "",
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_ACeCth": {
+                  "type": "text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Notre objectif est que chaque client soit totalement satisfait de son achat. Si ce n'est pas le cas, faites-le nous savoir et nous ferons de notre mieux pour trouver une solution avec vous.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_ACeCth"
+              ]
+            },
+            "accordion_BwgeQe": {
+              "type": "_accordion",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "heading": "Livraison",
+                "heading_tag": "p",
+                "heading_style": "paragraph",
+                "open_by_default": false,
+                "icon": "none",
+                "icon_custom": "",
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_m9VAaR": {
+                  "type": "text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Nous travaillons rapidement pour envoyer votre commande dès que possible. Une fois votre commande expédiée, vous recevrez un email avec des informations supplémentaires. Les délais de livraison varient en fonction de votre emplacement.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_m9VAaR"
+              ]
+            },
+            "accordion_YHiYQa": {
+              "type": "_accordion",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "heading": "Fabrication",
+                "heading_tag": "p",
+                "heading_style": "paragraph",
+                "open_by_default": false,
+                "icon": "none",
+                "icon_custom": "",
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_MFJWg3": {
+                  "type": "text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Nos produits sont fabriqués localement et à l'international. Nous sélectionnons soigneusement nos partenaires de fabrication pour garantir des produits de haute qualité à un prix juste.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_MFJWg3"
+              ]
+            },
+            "accordion_gwaxw9": {
+              "type": "_accordion",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "heading": "Livraison",
+                "heading_tag": "p",
+                "heading_style": "paragraph",
+                "open_by_default": false,
+                "icon": "none",
+                "icon_custom": "",
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_J6djQr": {
+                  "type": "text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Nous travaillons rapidement pour envoyer votre commande dès que possible. Une fois votre commande expédiée, vous recevrez un email avec des informations supplémentaires. Les délais de livraison varient en fonction de votre emplacement.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_J6djQr"
+              ]
+            },
+            "accordion_pRQxM4": {
+              "type": "_accordion",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "heading": "Fabrication",
+                "heading_tag": "p",
+                "heading_style": "paragraph",
+                "open_by_default": false,
+                "icon": "none",
+                "icon_custom": "",
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_4pEezk": {
+                  "type": "text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Nos produits sont fabriqués localement et à l'international. Nous sélectionnons soigneusement nos partenaires de fabrication pour garantir des produits de haute qualité à un prix juste.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_4pEezk"
+              ]
+            }
+          },
+          "block_order": [
+            "accordion_ceYJJq",
+            "accordion_BwgeQe",
+            "accordion_YHiYQa",
+            "accordion_gwaxw9",
+            "accordion_pRQxM4"
+          ]
+        }
+      },
+      "block_order": [
+        "text_bcFqQC",
+        "accordions_HRM9nq"
+      ],
+      "name": "t:faq_1",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "color_scheme": "scheme-bd470296-2415-4358-a0cc-2b9fd805ffec",
+        "wrap_in_card": false,
+        "color_scheme_card": "",
+        "section_width": "narrow",
+        "layout_type": "flex",
+        "layout_flex_direction_desktop": "column",
+        "layout_grid_columns_desktop": 3,
+        "layout_gap_desktop": 20,
+        "layout_wrap_desktop": "nowrap",
+        "layout_flex_justify_desktop": "center",
+        "layout_flex_align_items_desktop": "center",
+        "same_as_desktop": true,
+        "layout_flex_direction_mobile": "row",
+        "layout_gap_mobile": 20,
+        "layout_wrap_mobile": "nowrap",
+        "layout_flex_justify_mobile": "flex-start",
+        "layout_flex_align_items_mobile": "flex-start",
+        "layout_grid_columns_mobile": 1,
+        "padding_top": 30,
+        "padding_bottom": 30,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "anchor_id": "",
+        "additional_class": ""
+      }
+    },
+    "custom_section_wMcxaA": {
+      "type": "custom-section",
+      "blocks": {
+        "text_P3iDYP": {
+          "type": "text",
+          "name": "t:title",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "text": "<h3>Question sur xyz</h3>",
+            "text_style": "h3",
+            "paragraph_font_size": "normal",
+            "font_weight": 400,
+            "alignment": "center",
+            "alignment_mobile": "left",
+            "show_read_more": false,
+            "read_more_length": 50,
+            "read_more_text": "Voir plus",
+            "read_less_text": "Voir moins",
+            "truncate": false,
+            "truncate_length": 2,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "accordions_JDQHkj": {
+          "type": "accordions",
+          "name": "t:accordions",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "icon": "caret",
+            "accordion_padding": "medium",
+            "dividers": true,
+            "additional_class": ""
+          },
+          "blocks": {
+            "accordion_xVKVyG": {
+              "type": "_accordion",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "heading": "Politique de retour",
+                "heading_tag": "p",
+                "heading_style": "paragraph",
+                "open_by_default": false,
+                "icon": "none",
+                "icon_custom": "",
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_DgMdwa": {
+                  "type": "text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Notre objectif est que chaque client soit totalement satisfait de son achat. Si ce n'est pas le cas, faites-le nous savoir et nous ferons de notre mieux pour trouver une solution avec vous.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_DgMdwa"
+              ]
+            },
+            "accordion_gYhtbJ": {
+              "type": "_accordion",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "heading": "Livraison",
+                "heading_tag": "p",
+                "heading_style": "paragraph",
+                "open_by_default": false,
+                "icon": "none",
+                "icon_custom": "",
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_Kq8RH4": {
+                  "type": "text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Nous travaillons rapidement pour envoyer votre commande dès que possible. Une fois votre commande expédiée, vous recevrez un email avec des informations supplémentaires. Les délais de livraison varient en fonction de votre emplacement.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_Kq8RH4"
+              ]
+            },
+            "accordion_qXWNJ9": {
+              "type": "_accordion",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "heading": "Fabrication",
+                "heading_tag": "p",
+                "heading_style": "paragraph",
+                "open_by_default": false,
+                "icon": "none",
+                "icon_custom": "",
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_JPJzQc": {
+                  "type": "text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Nos produits sont fabriqués localement et à l'international. Nous sélectionnons soigneusement nos partenaires de fabrication pour garantir des produits de haute qualité à un prix juste.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_JPJzQc"
+              ]
+            },
+            "accordion_bBXHPj": {
+              "type": "_accordion",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "heading": "Livraison",
+                "heading_tag": "p",
+                "heading_style": "paragraph",
+                "open_by_default": false,
+                "icon": "none",
+                "icon_custom": "",
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_7KGkKA": {
+                  "type": "text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Nous travaillons rapidement pour envoyer votre commande dès que possible. Une fois votre commande expédiée, vous recevrez un email avec des informations supplémentaires. Les délais de livraison varient en fonction de votre emplacement.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_7KGkKA"
+              ]
+            },
+            "accordion_7ywnCN": {
+              "type": "_accordion",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "heading": "Fabrication",
+                "heading_tag": "p",
+                "heading_style": "paragraph",
+                "open_by_default": false,
+                "icon": "none",
+                "icon_custom": "",
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_8MnxKg": {
+                  "type": "text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Nos produits sont fabriqués localement et à l'international. Nous sélectionnons soigneusement nos partenaires de fabrication pour garantir des produits de haute qualité à un prix juste.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_8MnxKg"
+              ]
+            }
+          },
+          "block_order": [
+            "accordion_xVKVyG",
+            "accordion_gYhtbJ",
+            "accordion_qXWNJ9",
+            "accordion_bBXHPj",
+            "accordion_7ywnCN"
+          ]
+        }
+      },
+      "block_order": [
+        "text_P3iDYP",
+        "accordions_JDQHkj"
+      ],
+      "name": "t:faq_1",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "color_scheme": "scheme-bd470296-2415-4358-a0cc-2b9fd805ffec",
+        "wrap_in_card": false,
+        "color_scheme_card": "",
+        "section_width": "narrow",
+        "layout_type": "flex",
+        "layout_flex_direction_desktop": "column",
+        "layout_grid_columns_desktop": 3,
+        "layout_gap_desktop": 20,
+        "layout_wrap_desktop": "nowrap",
+        "layout_flex_justify_desktop": "center",
+        "layout_flex_align_items_desktop": "center",
+        "same_as_desktop": true,
+        "layout_flex_direction_mobile": "row",
+        "layout_gap_mobile": 20,
+        "layout_wrap_mobile": "nowrap",
+        "layout_flex_justify_mobile": "flex-start",
+        "layout_flex_align_items_mobile": "flex-start",
+        "layout_grid_columns_mobile": 1,
+        "padding_top": 30,
+        "padding_bottom": 30,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "anchor_id": "",
+        "additional_class": ""
+      }
+    },
+    "custom_section_TjQQ7i": {
+      "type": "custom-section",
+      "blocks": {
+        "text_LXAyUX": {
+          "type": "text",
+          "name": "t:title",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "text": "<h3>Question sur xyz</h3>",
+            "text_style": "h3",
+            "paragraph_font_size": "normal",
+            "font_weight": 400,
+            "alignment": "center",
+            "alignment_mobile": "left",
+            "show_read_more": false,
+            "read_more_length": 50,
+            "read_more_text": "Voir plus",
+            "read_less_text": "Voir moins",
+            "truncate": false,
+            "truncate_length": 2,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "accordions_ExDnec": {
+          "type": "accordions",
+          "name": "t:accordions",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "icon": "caret",
+            "accordion_padding": "medium",
+            "dividers": true,
+            "additional_class": ""
+          },
+          "blocks": {
+            "accordion_eFxG6U": {
+              "type": "_accordion",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "heading": "Politique de retour",
+                "heading_tag": "p",
+                "heading_style": "paragraph",
+                "open_by_default": false,
+                "icon": "none",
+                "icon_custom": "",
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_yQU7Hk": {
+                  "type": "text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Notre objectif est que chaque client soit totalement satisfait de son achat. Si ce n'est pas le cas, faites-le nous savoir et nous ferons de notre mieux pour trouver une solution avec vous.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_yQU7Hk"
+              ]
+            },
+            "accordion_UVWPKx": {
+              "type": "_accordion",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "heading": "Livraison",
+                "heading_tag": "p",
+                "heading_style": "paragraph",
+                "open_by_default": false,
+                "icon": "none",
+                "icon_custom": "",
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_Jb36aq": {
+                  "type": "text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Nous travaillons rapidement pour envoyer votre commande dès que possible. Une fois votre commande expédiée, vous recevrez un email avec des informations supplémentaires. Les délais de livraison varient en fonction de votre emplacement.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_Jb36aq"
+              ]
+            },
+            "accordion_tBhgMU": {
+              "type": "_accordion",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "heading": "Fabrication",
+                "heading_tag": "p",
+                "heading_style": "paragraph",
+                "open_by_default": false,
+                "icon": "none",
+                "icon_custom": "",
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_DwqatH": {
+                  "type": "text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Nos produits sont fabriqués localement et à l'international. Nous sélectionnons soigneusement nos partenaires de fabrication pour garantir des produits de haute qualité à un prix juste.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_DwqatH"
+              ]
+            },
+            "accordion_8YFcDB": {
+              "type": "_accordion",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "heading": "Livraison",
+                "heading_tag": "p",
+                "heading_style": "paragraph",
+                "open_by_default": false,
+                "icon": "none",
+                "icon_custom": "",
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_Akc3Dr": {
+                  "type": "text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Nous travaillons rapidement pour envoyer votre commande dès que possible. Une fois votre commande expédiée, vous recevrez un email avec des informations supplémentaires. Les délais de livraison varient en fonction de votre emplacement.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_Akc3Dr"
+              ]
+            },
+            "accordion_JEWf3i": {
+              "type": "_accordion",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "heading": "Fabrication",
+                "heading_tag": "p",
+                "heading_style": "paragraph",
+                "open_by_default": false,
+                "icon": "none",
+                "icon_custom": "",
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_WngEhV": {
+                  "type": "text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Nos produits sont fabriqués localement et à l'international. Nous sélectionnons soigneusement nos partenaires de fabrication pour garantir des produits de haute qualité à un prix juste.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_WngEhV"
+              ]
+            }
+          },
+          "block_order": [
+            "accordion_eFxG6U",
+            "accordion_UVWPKx",
+            "accordion_tBhgMU",
+            "accordion_8YFcDB",
+            "accordion_JEWf3i"
+          ]
+        }
+      },
+      "block_order": [
+        "text_LXAyUX",
+        "accordions_ExDnec"
+      ],
+      "name": "t:faq_1",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "color_scheme": "scheme-bd470296-2415-4358-a0cc-2b9fd805ffec",
+        "wrap_in_card": false,
+        "color_scheme_card": "",
+        "section_width": "narrow",
+        "layout_type": "flex",
+        "layout_flex_direction_desktop": "column",
+        "layout_grid_columns_desktop": 3,
+        "layout_gap_desktop": 20,
+        "layout_wrap_desktop": "nowrap",
+        "layout_flex_justify_desktop": "center",
+        "layout_flex_align_items_desktop": "center",
+        "same_as_desktop": true,
+        "layout_flex_direction_mobile": "row",
+        "layout_gap_mobile": 20,
+        "layout_wrap_mobile": "nowrap",
+        "layout_flex_justify_mobile": "flex-start",
+        "layout_flex_align_items_mobile": "flex-start",
+        "layout_grid_columns_mobile": 1,
+        "padding_top": 30,
+        "padding_bottom": 30,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "anchor_id": "",
+        "additional_class": ""
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "custom_section_xfGyrj",
+    "custom_section_wMcxaA",
+    "custom_section_TjQQ7i"
+  ]
+}

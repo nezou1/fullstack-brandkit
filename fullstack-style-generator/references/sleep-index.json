@@ -1,0 +1,2149 @@
+{
+  "sections": {
+    "image_banner_VXNP89": {
+      "type": "image-banner",
+      "blocks": {
+        "image_banner_dBEabG": {
+          "type": "_image-banner",
+          "name": "t:image_banner",
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/iam_os-tgMKcE-Qo5o-unsplash.jpg",
+            "source": "uploaded",
+            "video_url": "",
+            "color_scheme": "scheme-3",
+            "banner_height": "medium",
+            "layout_justify": "center",
+            "layout_align_items": "center",
+            "same_as_desktop": false,
+            "banner_height_mobile": "small",
+            "layout_justify_mobile": "center",
+            "layout_align_items_mobile": "center",
+            "image_filter_opacity": 20,
+            "image_filter_color": "#051a3c",
+            "padding_horizontal": 0,
+            "padding_vertical": 40
+          },
+          "blocks": {
+            "group_nypGzr": {
+              "type": "group",
+              "name": "t:group",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "wrap_in_card": false,
+                "card_link": "",
+                "color_scheme": "",
+                "show_card_border": false,
+                "layout_type": "flex",
+                "width_desktop": 60,
+                "layout_direction_desktop": "column",
+                "layout_grid_columns_desktop": 3,
+                "layout_gap_desktop": 10,
+                "layout_wrap_desktop": "nowrap",
+                "layout_justify_desktop": "center",
+                "layout_align_items_desktop": "center",
+                "same_as_desktop": false,
+                "width_mobile": 100,
+                "layout_direction_mobile": "column",
+                "layout_grid_columns_mobile": 1,
+                "layout_gap_mobile": 10,
+                "layout_wrap_mobile": "nowrap",
+                "layout_justify_mobile": "center",
+                "layout_align_items_mobile": "center",
+                "use_global_container_padding": true,
+                "padding_horizontal": 30,
+                "padding_vertical": 30,
+                "margin_top": 10,
+                "margin_bottom": 10,
+                "additional_class": ""
+              },
+              "blocks": {
+                "reviews_badge_cgcp7n": {
+                  "type": "reviews-badge",
+                  "name": "t:reviews_badge_trustpilot",
+                  "settings": {
+                    "review_badge_style": "trustpilot",
+                    "wrap_in_a_badge": true,
+                    "color_scheme": "scheme-1",
+                    "show_badge_border": true,
+                    "text_1": "Excellent",
+                    "stars": "4,5",
+                    "text_2": "1988 avis sur",
+                    "link": "",
+                    "margin_top": 0,
+                    "margin_bottom": 20,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "text_VJtMDF": {
+                  "type": "text",
+                  "name": "Proposition de valeur",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>PARCE QUE VOS JOURNÉES SE PRÉPARENT LA NUIT</p>",
+                    "text_style": "h2",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "center",
+                    "alignment_mobile": "center",
+                    "show_read_more": false,
+                    "read_more_length": 200,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "button_QYkRDA": {
+                  "type": "button",
+                  "name": "t:button",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "link": "shopify://collections/all",
+                    "open_in_new_tab": false,
+                    "label": "Je découvre",
+                    "button_style": "primary",
+                    "button_shape": "default",
+                    "icon": "none",
+                    "icon_custom": "",
+                    "icon_position": "end",
+                    "margin_top": 10,
+                    "margin_bottom": 10,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "group_3Pie6V": {
+                  "type": "group",
+                  "name": "Badges de confiance (Groupe)",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "wrap_in_card": false,
+                    "card_link": "",
+                    "color_scheme": "",
+                    "show_card_border": false,
+                    "layout_type": "flex",
+                    "width_desktop": 100,
+                    "layout_direction_desktop": "row",
+                    "layout_grid_columns_desktop": 3,
+                    "layout_gap_desktop": 20,
+                    "layout_wrap_desktop": "nowrap",
+                    "layout_justify_desktop": "center",
+                    "layout_align_items_desktop": "center",
+                    "same_as_desktop": false,
+                    "width_mobile": 100,
+                    "layout_direction_mobile": "column",
+                    "layout_grid_columns_mobile": 1,
+                    "layout_gap_mobile": 10,
+                    "layout_wrap_mobile": "nowrap",
+                    "layout_justify_mobile": "center",
+                    "layout_align_items_mobile": "center",
+                    "use_global_container_padding": true,
+                    "padding_horizontal": 30,
+                    "padding_vertical": 30,
+                    "margin_top": 15,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {
+                    "icon_with_text_MPKKCD": {
+                      "type": "icon-with-text",
+                      "name": "t:icon_with_text",
+                      "settings": {
+                        "show_on_display": "desktop_and_mobile",
+                        "layout_direction_desktop": "row",
+                        "layout_gap_desktop": 5,
+                        "same_as_desktop": true,
+                        "layout_direction_mobile": "column",
+                        "layout_gap_mobile": 10,
+                        "icon_type": "icon",
+                        "icon": "priority",
+                        "icon_custom": "bedtime",
+                        "icon_size": 22,
+                        "icon_position": "start",
+                        "text": "<p>100 nuits d'essai</p>",
+                        "text_style": "paragraph",
+                        "font_weight": 400,
+                        "margin_top": 0,
+                        "margin_bottom": 0,
+                        "additional_class": ""
+                      },
+                      "blocks": {}
+                    },
+                    "icon_with_text_AdYCCm": {
+                      "type": "icon-with-text",
+                      "name": "t:icon_with_text",
+                      "settings": {
+                        "show_on_display": "desktop_and_mobile",
+                        "layout_direction_desktop": "row",
+                        "layout_gap_desktop": 5,
+                        "same_as_desktop": true,
+                        "layout_direction_mobile": "column",
+                        "layout_gap_mobile": 10,
+                        "icon_type": "icon",
+                        "icon": "priority",
+                        "icon_custom": "workspace_premium",
+                        "icon_size": 22,
+                        "icon_position": "start",
+                        "text": "<p>Matériaux certifiés</p>",
+                        "text_style": "paragraph",
+                        "font_weight": 400,
+                        "margin_top": 0,
+                        "margin_bottom": 0,
+                        "additional_class": ""
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "icon_with_text_MPKKCD",
+                    "icon_with_text_AdYCCm"
+                  ]
+                }
+              },
+              "block_order": [
+                "reviews_badge_cgcp7n",
+                "text_VJtMDF",
+                "button_QYkRDA",
+                "group_3Pie6V"
+              ]
+            }
+          },
+          "block_order": [
+            "group_nypGzr"
+          ]
+        }
+      },
+      "block_order": [
+        "image_banner_dBEabG"
+      ],
+      "name": "t:image_banner_full_width",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "full_width": true,
+        "color_scheme": "scheme-1",
+        "show_arrows": false,
+        "arrows_button_style": "secondary",
+        "show_pagination": true,
+        "autoplay": false,
+        "rewind": true,
+        "autoplay_speed": 4,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "anchor_id": "",
+        "additional_class": ""
+      }
+    },
+    "collection_featured_JXRpw3": {
+      "type": "collection-featured",
+      "blocks": {
+        "group_9NwHBp": {
+          "type": "group",
+          "name": "t:group",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "wrap_in_card": false,
+            "card_link": "",
+            "color_scheme": "scheme-3",
+            "show_card_border": false,
+            "layout_type": "flex",
+            "width_desktop": 100,
+            "layout_direction_desktop": "row",
+            "layout_grid_columns_desktop": 3,
+            "layout_gap_desktop": 30,
+            "layout_wrap_desktop": "nowrap",
+            "layout_justify_desktop": "space-between",
+            "layout_align_items_desktop": "center",
+            "same_as_desktop": true,
+            "width_mobile": 100,
+            "layout_direction_mobile": "column",
+            "layout_grid_columns_mobile": 1,
+            "layout_gap_mobile": 10,
+            "layout_wrap_mobile": "nowrap",
+            "layout_justify_mobile": "flex-start",
+            "layout_align_items_mobile": "flex-start",
+            "use_global_container_padding": true,
+            "padding_horizontal": 30,
+            "padding_vertical": 30,
+            "margin_top": 10,
+            "margin_bottom": 30,
+            "additional_class": ""
+          },
+          "blocks": {
+            "group_TwitGb": {
+              "type": "group",
+              "name": "Groupe titre",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "wrap_in_card": false,
+                "card_link": "",
+                "color_scheme": "",
+                "show_card_border": false,
+                "layout_type": "flex",
+                "width_desktop": 80,
+                "layout_direction_desktop": "column",
+                "layout_grid_columns_desktop": 3,
+                "layout_gap_desktop": 10,
+                "layout_wrap_desktop": "nowrap",
+                "layout_justify_desktop": "flex-start",
+                "layout_align_items_desktop": "flex-start",
+                "same_as_desktop": false,
+                "width_mobile": 100,
+                "layout_direction_mobile": "column",
+                "layout_grid_columns_mobile": 1,
+                "layout_gap_mobile": 10,
+                "layout_wrap_mobile": "nowrap",
+                "layout_justify_mobile": "flex-start",
+                "layout_align_items_mobile": "flex-start",
+                "use_global_container_padding": true,
+                "padding_horizontal": 30,
+                "padding_vertical": 30,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_QEHkGh": {
+                  "type": "text",
+                  "name": "t:title",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<h2>Redécouvrez le plaisir de bien dormir</h2>",
+                    "text_style": "h2",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 200,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "text_6LANC3": {
+                  "type": "text",
+                  "name": "t:text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Chaque détail compte pour transformer vos nuits en moments de véritable détente.</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "large",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_QEHkGh",
+                "text_6LANC3"
+              ]
+            },
+            "button_DFrQyK": {
+              "type": "button",
+              "name": "t:button",
+              "settings": {
+                "show_on_display": "desktop_only",
+                "link": "{{ closest.collection.url }}",
+                "open_in_new_tab": false,
+                "label": "Voir tous",
+                "button_style": "secondary",
+                "button_shape": "small",
+                "icon": "none",
+                "icon_custom": "",
+                "icon_position": "end",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "group_TwitGb",
+            "button_DFrQyK"
+          ]
+        },
+        "product-card": {
+          "type": "_product-card",
+          "static": true,
+          "settings": {
+            "wrap_in_card": false,
+            "color_scheme": "",
+            "layout_gap": 15
+          },
+          "blocks": {
+            "product_card_media_gallery_QnTjNe": {
+              "type": "_product-card-media-gallery",
+              "name": "t:product_card_gallery",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "show_slider": false,
+                "media_rounded": true,
+                "show_badges": true,
+                "media_ratio": "1 / 1",
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "product_card_group_8YB86f": {
+              "type": "_product-card-group",
+              "name": "t:group",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "wrap_in_card": false,
+                "color_scheme": "scheme-3",
+                "layout_direction_desktop": "column",
+                "layout_gap_desktop": 5,
+                "layout_wrap_desktop": "nowrap",
+                "layout_justify_desktop": "flex-start",
+                "layout_align_items_desktop": "flex-start",
+                "same_as_desktop": true,
+                "layout_direction_mobile": "column",
+                "layout_gap_mobile": 10,
+                "layout_wrap_mobile": "nowrap",
+                "layout_justify_mobile": "flex-start",
+                "layout_align_items_mobile": "flex-start",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_kW3cUN": {
+                  "type": "text",
+                  "name": "t:text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<h2>{{ closest.product.title }}</h2>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "large",
+                    "font_weight": 600,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 200,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "text_UGrh8c": {
+                  "type": "text",
+                  "name": "t:text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Lorem ipsum</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "rating_stars_VJ6F6G": {
+                  "type": "rating-stars",
+                  "name": "t:rating_stars",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "product": "",
+                    "hide_rating_when_no_reviews": true,
+                    "rating": 4.5,
+                    "show_note": true,
+                    "show_review_count": false,
+                    "review_count": 123,
+                    "link": "",
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "product_price_wqjabM": {
+                  "type": "product-price",
+                  "name": "t:product_price",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "product": "{{ closest.product }}",
+                    "sales_badge": "percentage",
+                    "show_sales_badge_text": false,
+                    "show_unit_price": false,
+                    "text_style": "paragraph",
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_kW3cUN",
+                "text_UGrh8c",
+                "rating_stars_VJ6F6G",
+                "product_price_wqjabM"
+              ]
+            }
+          },
+          "block_order": [
+            "product_card_media_gallery_QnTjNe",
+            "product_card_group_8YB86f"
+          ]
+        }
+      },
+      "block_order": [
+        "group_9NwHBp"
+      ],
+      "name": "t:collection_featured",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "color_scheme": "scheme-bd470296-2415-4358-a0cc-2b9fd805ffec",
+        "collection": "accueil-demo",
+        "max_products": 8,
+        "layout_type": "slider",
+        "grid_columns": 4,
+        "grid_columns_mobile": "2",
+        "slider_items": 3,
+        "slider_items_mobile": "1.8",
+        "show_arrows": true,
+        "arrows_button_style": "secondary",
+        "show_pagination": false,
+        "rewind": true,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "anchor_id": "",
+        "additional_class": ""
+      }
+    },
+    "marquee_UXVQjn": {
+      "type": "marquee",
+      "blocks": {
+        "marquee_CWcjjt": {
+          "type": "marquee",
+          "settings": {
+            "movement_direction": "normal",
+            "gap": 30,
+            "color_scheme": "scheme-2",
+            "padding_top": 20,
+            "padding_bottom": 20,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {
+            "icon_with_text_7zHFUU": {
+              "type": "icon-with-text",
+              "name": "t:icon_with_text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "layout_direction_desktop": "row",
+                "layout_gap_desktop": 10,
+                "same_as_desktop": true,
+                "layout_direction_mobile": "row",
+                "layout_gap_mobile": 10,
+                "icon_type": "icon",
+                "icon": "favorite",
+                "icon_custom": "",
+                "icon_size": 20,
+                "icon_position": "start",
+                "text": "<p>THE BEST SHOPIFY THEME</p>",
+                "text_style": "paragraph",
+                "font_weight": 500,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "icon_with_text_7zHFUU"
+          ]
+        }
+      },
+      "block_order": [
+        "marquee_CWcjjt"
+      ],
+      "name": "t:marquee",
+      "settings": {
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "anchor_id": "",
+        "additional_class": ""
+      }
+    },
+    "custom_section_wxUWmx": {
+      "type": "custom-section",
+      "blocks": {
+        "group_K88fpM": {
+          "type": "group",
+          "name": "t:group",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "wrap_in_card": false,
+            "card_link": "",
+            "color_scheme": "",
+            "show_card_border": false,
+            "layout_type": "flex",
+            "width_desktop": 60,
+            "layout_direction_desktop": "column",
+            "layout_grid_columns_desktop": 3,
+            "layout_gap_desktop": 15,
+            "layout_wrap_desktop": "nowrap",
+            "layout_justify_desktop": "center",
+            "layout_align_items_desktop": "center",
+            "same_as_desktop": false,
+            "width_mobile": 100,
+            "layout_direction_mobile": "column",
+            "layout_grid_columns_mobile": 1,
+            "layout_gap_mobile": 10,
+            "layout_wrap_mobile": "nowrap",
+            "layout_justify_mobile": "center",
+            "layout_align_items_mobile": "center",
+            "use_global_container_padding": true,
+            "padding_horizontal": 30,
+            "padding_vertical": 30,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {
+            "icon_m9AnFb": {
+              "type": "icon",
+              "name": "t:icon",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "icon_type": "icon",
+                "icon": "favorite",
+                "icon_custom": "bedtime",
+                "icon_size": 60,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "text_TmGPC9": {
+              "type": "text",
+              "name": "t:title",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<h2>100 NUITS D'ESSAI</h2>",
+                "text_style": "h2",
+                "paragraph_font_size": "normal",
+                "font_weight": 400,
+                "alignment": "center",
+                "alignment_mobile": "center",
+                "show_read_more": false,
+                "read_more_length": 50,
+                "read_more_text": "Voir plus",
+                "read_less_text": "Voir moins",
+                "truncate": false,
+                "truncate_length": 2,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "text_QABwJ9": {
+              "type": "text",
+              "name": "t:text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<p>Prenez le temps de décider : chez SLeep, vous avez 100 nuits pour essayer nos matelas chez vous, à partir de la réception de votre commande.</p>",
+                "text_style": "h6",
+                "paragraph_font_size": "large",
+                "font_weight": 400,
+                "alignment": "center",
+                "alignment_mobile": "center",
+                "show_read_more": false,
+                "read_more_length": 50,
+                "read_more_text": "Voir plus",
+                "read_less_text": "Voir moins",
+                "truncate": false,
+                "truncate_length": 2,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "button_aNqTVf": {
+              "type": "button",
+              "name": "t:button",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "link": "",
+                "open_in_new_tab": false,
+                "label": "En savoir plus",
+                "button_style": "primary",
+                "button_shape": "default",
+                "icon": "none",
+                "icon_custom": "info",
+                "icon_position": "end",
+                "margin_top": 20,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "icon_m9AnFb",
+            "text_TmGPC9",
+            "text_QABwJ9",
+            "button_aNqTVf"
+          ]
+        }
+      },
+      "block_order": [
+        "group_K88fpM"
+      ],
+      "name": "Sources d'autorité",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "color_scheme": "scheme-3",
+        "wrap_in_card": false,
+        "color_scheme_card": "",
+        "section_width": "normal",
+        "layout_type": "flex",
+        "layout_flex_direction_desktop": "column",
+        "layout_grid_columns_desktop": 3,
+        "layout_gap_desktop": 20,
+        "layout_wrap_desktop": "nowrap",
+        "layout_flex_justify_desktop": "center",
+        "layout_flex_align_items_desktop": "center",
+        "same_as_desktop": true,
+        "layout_flex_direction_mobile": "column",
+        "layout_gap_mobile": 20,
+        "layout_wrap_mobile": "nowrap",
+        "layout_flex_justify_mobile": "flex-start",
+        "layout_flex_align_items_mobile": "flex-start",
+        "layout_grid_columns_mobile": 1,
+        "padding_top": 70,
+        "padding_bottom": 100,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "anchor_id": "",
+        "additional_class": ""
+      }
+    },
+    "custom_section_NkHGLz": {
+      "type": "custom-section",
+      "blocks": {
+        "image_mFqbDi": {
+          "type": "image",
+          "name": "t:image",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "image": "shopify://shop_images/hotel-sleep-in.jpg",
+            "show_placeholder": true,
+            "link": "",
+            "image_ratio": "square",
+            "image_width_desktop": 100,
+            "image_width_mobile": 100,
+            "enable_rounded_corners": true,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "group_DgQq6e": {
+          "type": "group",
+          "name": "t:group",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "wrap_in_card": false,
+            "card_link": "",
+            "color_scheme": "scheme-2",
+            "show_card_border": false,
+            "layout_type": "flex",
+            "width_desktop": 100,
+            "layout_direction_desktop": "column",
+            "layout_grid_columns_desktop": 3,
+            "layout_gap_desktop": 15,
+            "layout_wrap_desktop": "nowrap",
+            "layout_justify_desktop": "flex-start",
+            "layout_align_items_desktop": "flex-start",
+            "same_as_desktop": true,
+            "width_mobile": 100,
+            "layout_direction_mobile": "column",
+            "layout_grid_columns_mobile": 1,
+            "layout_gap_mobile": 10,
+            "layout_wrap_mobile": "nowrap",
+            "layout_justify_mobile": "flex-start",
+            "layout_align_items_mobile": "flex-start",
+            "use_global_container_padding": true,
+            "padding_horizontal": 30,
+            "padding_vertical": 30,
+            "margin_top": 10,
+            "margin_bottom": 10,
+            "additional_class": ""
+          },
+          "blocks": {
+            "text_Y894Gj": {
+              "type": "text",
+              "name": "t:title",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<p>Un oreiller qui transforme votre sommeil.</p>",
+                "text_style": "h2",
+                "paragraph_font_size": "normal",
+                "font_weight": 400,
+                "alignment": "left",
+                "alignment_mobile": "left",
+                "show_read_more": false,
+                "read_more_length": 200,
+                "read_more_text": "Voir plus",
+                "read_less_text": "Voir moins",
+                "truncate": false,
+                "truncate_length": 2,
+                "margin_top": 0,
+                "margin_bottom": 10,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "group_ck7DhP": {
+              "type": "group",
+              "name": "Résultat (Groupe)",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "wrap_in_card": false,
+                "card_link": "",
+                "color_scheme": "",
+                "show_card_border": false,
+                "layout_type": "flex",
+                "width_desktop": 100,
+                "layout_direction_desktop": "row",
+                "layout_grid_columns_desktop": 3,
+                "layout_gap_desktop": 15,
+                "layout_wrap_desktop": "nowrap",
+                "layout_justify_desktop": "flex-start",
+                "layout_align_items_desktop": "center",
+                "same_as_desktop": true,
+                "width_mobile": 100,
+                "layout_direction_mobile": "column",
+                "layout_grid_columns_mobile": 1,
+                "layout_gap_mobile": 10,
+                "layout_wrap_mobile": "nowrap",
+                "layout_justify_mobile": "flex-start",
+                "layout_align_items_mobile": "flex-start",
+                "use_global_container_padding": true,
+                "padding_horizontal": 30,
+                "padding_vertical": 30,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_PYPXGd": {
+                  "type": "text",
+                  "name": "t:title",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>90%</p>",
+                    "text_style": "h1",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "text_zGbfUK": {
+                  "type": "text",
+                  "name": "t:text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p><strong>Douleurs cervicales réduites</strong></p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "large",
+                    "font_weight": 500,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 200,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_PYPXGd",
+                "text_zGbfUK"
+              ]
+            },
+            "group_yXUtHB": {
+              "type": "group",
+              "name": "Résultat (Groupe)",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "wrap_in_card": false,
+                "card_link": "",
+                "color_scheme": "",
+                "show_card_border": false,
+                "layout_type": "flex",
+                "width_desktop": 100,
+                "layout_direction_desktop": "row",
+                "layout_grid_columns_desktop": 3,
+                "layout_gap_desktop": 15,
+                "layout_wrap_desktop": "nowrap",
+                "layout_justify_desktop": "flex-start",
+                "layout_align_items_desktop": "center",
+                "same_as_desktop": true,
+                "width_mobile": 100,
+                "layout_direction_mobile": "column",
+                "layout_grid_columns_mobile": 1,
+                "layout_gap_mobile": 10,
+                "layout_wrap_mobile": "nowrap",
+                "layout_justify_mobile": "flex-start",
+                "layout_align_items_mobile": "flex-start",
+                "use_global_container_padding": true,
+                "padding_horizontal": 30,
+                "padding_vertical": 30,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_Lnw38Y": {
+                  "type": "text",
+                  "name": "t:title",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>87%</p>",
+                    "text_style": "h2",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "text_EJFQ7w": {
+                  "type": "text",
+                  "name": "t:text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p><strong>Sommeil de meilleure qualité</strong></p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 500,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 200,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_Lnw38Y",
+                "text_EJFQ7w"
+              ]
+            },
+            "group_H3TcJD": {
+              "type": "group",
+              "name": "Résultat (Groupe)",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "wrap_in_card": false,
+                "card_link": "",
+                "color_scheme": "",
+                "show_card_border": false,
+                "layout_type": "flex",
+                "width_desktop": 100,
+                "layout_direction_desktop": "row",
+                "layout_grid_columns_desktop": 3,
+                "layout_gap_desktop": 15,
+                "layout_wrap_desktop": "nowrap",
+                "layout_justify_desktop": "flex-start",
+                "layout_align_items_desktop": "center",
+                "same_as_desktop": true,
+                "width_mobile": 100,
+                "layout_direction_mobile": "column",
+                "layout_grid_columns_mobile": 1,
+                "layout_gap_mobile": 10,
+                "layout_wrap_mobile": "nowrap",
+                "layout_justify_mobile": "flex-start",
+                "layout_align_items_mobile": "flex-start",
+                "use_global_container_padding": true,
+                "padding_horizontal": 30,
+                "padding_vertical": 30,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_7dg3tx": {
+                  "type": "text",
+                  "name": "t:title",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>86%</p>",
+                    "text_style": "h3",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "text_67Hf9m": {
+                  "type": "text",
+                  "name": "t:text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p><strong>Réveils en meilleure forme</strong></p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "small",
+                    "font_weight": 500,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 200,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_7dg3tx",
+                "text_67Hf9m"
+              ]
+            },
+            "text_7yaQVx": {
+              "type": "text",
+              "name": "t:text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<p><em>* Données issues d'un questionnaire envoyé en décembre 2024 aux clients</em></p>",
+                "text_style": "paragraph",
+                "paragraph_font_size": "normal",
+                "font_weight": 400,
+                "alignment": "left",
+                "alignment_mobile": "left",
+                "show_read_more": false,
+                "read_more_length": 50,
+                "read_more_text": "Voir plus",
+                "read_less_text": "Voir moins",
+                "truncate": false,
+                "truncate_length": 2,
+                "margin_top": 20,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "button_46t7rE": {
+              "type": "button",
+              "name": "t:button",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "link": "shopify://products/oreiller",
+                "open_in_new_tab": false,
+                "label": "En savoir plus",
+                "button_style": "primary",
+                "button_shape": "default",
+                "icon": "none",
+                "icon_custom": "",
+                "icon_position": "end",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_Y894Gj",
+            "group_ck7DhP",
+            "group_yXUtHB",
+            "group_H3TcJD",
+            "text_7yaQVx",
+            "button_46t7rE"
+          ]
+        }
+      },
+      "block_order": [
+        "image_mFqbDi",
+        "group_DgQq6e"
+      ],
+      "name": "Résultats prouvés",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "color_scheme": "scheme-bd470296-2415-4358-a0cc-2b9fd805ffec",
+        "wrap_in_card": false,
+        "color_scheme_card": "",
+        "section_width": "normal",
+        "layout_type": "flex",
+        "layout_flex_direction_desktop": "row",
+        "layout_grid_columns_desktop": 3,
+        "layout_gap_desktop": 50,
+        "layout_wrap_desktop": "nowrap",
+        "layout_flex_justify_desktop": "flex-start",
+        "layout_flex_align_items_desktop": "center",
+        "same_as_desktop": false,
+        "layout_flex_direction_mobile": "column",
+        "layout_gap_mobile": 10,
+        "layout_wrap_mobile": "nowrap",
+        "layout_flex_justify_mobile": "flex-start",
+        "layout_flex_align_items_mobile": "flex-start",
+        "layout_grid_columns_mobile": 1,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "anchor_id": "",
+        "additional_class": ""
+      }
+    },
+    "custom_section_7dEdBr": {
+      "type": "custom-section",
+      "blocks": {
+        "reviews_badge_eNMXBq": {
+          "type": "reviews-badge",
+          "name": "t:reviews_badge_trustpilot",
+          "settings": {
+            "review_badge_style": "trustpilot",
+            "wrap_in_a_badge": true,
+            "color_scheme": "scheme-1",
+            "show_badge_border": false,
+            "text_1": "Excellent",
+            "stars": "4,5",
+            "text_2": "1988 avis sur",
+            "link": "",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "text_mNUdYY": {
+          "type": "text",
+          "name": "t:title",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "text": "<h3>Ce que nos clients en pensent</h3>",
+            "text_style": "h2",
+            "paragraph_font_size": "normal",
+            "font_weight": 400,
+            "alignment": "center",
+            "alignment_mobile": "center",
+            "show_read_more": false,
+            "read_more_length": 50,
+            "read_more_text": "Voir plus",
+            "read_less_text": "Voir moins",
+            "truncate": false,
+            "truncate_length": 2,
+            "margin_top": 0,
+            "margin_bottom": 20,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "slider_fT4xkr": {
+          "type": "slider",
+          "name": "t:slider",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "per_page_desktop": 2,
+            "per_page_mobile": "1",
+            "gap": 15,
+            "show_arrows": true,
+            "arrows_button_style": "secondary",
+            "show_pagination": false,
+            "rewind": false,
+            "autoplay": false,
+            "autoplay_speed": 4,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {
+            "slide_MjHi4c": {
+              "type": "_slide",
+              "name": "t:slide",
+              "settings": {
+                "wrap_in_card": false,
+                "color_scheme": "",
+                "layout_direction": "row",
+                "layout_wrap": "nowrap",
+                "layout_gap": 10,
+                "layout_justify": "flex-start",
+                "layout_align_items": "flex-start",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {
+                "review_3aJ4Jb": {
+                  "type": "review",
+                  "name": "t:review_display_5",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "display_type": "5",
+                    "wrap_in_card": true,
+                    "color_scheme": "",
+                    "show_card_border": false,
+                    "rating": 4.5,
+                    "image_ratio": "landscape",
+                    "source": "uploaded",
+                    "video_url": "",
+                    "title": "Excellent produit !",
+                    "content": "<p>J'ai découvert ce matelas il y a trois mois et c'est vraiment un changement radical pour moi. Je souffrais de douleurs lombaires chroniques et j'ai essayé tellement de solutions sans résultat. </p><p>Dès la première nuit, j'ai senti la différence. Le soutien est parfait, ni trop ferme ni trop mou. Je dors maintenant profondément et je me réveille sans aucune douleur. Mon partenaire apprécie aussi le fait que les mouvements ne se transmettent pas d'un côté à l'autre du lit. </p><p>C'est un investissement qui en vaut vraiment la peine. Je recommande vivement à tous ceux qui cherchent un vrai confort.</p>",
+                    "author_profile": "shopify://shop_images/iam_os-tgMKcE-Qo5o-unsplash.jpg",
+                    "author": "John Doe",
+                    "date": "11/03/2025",
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "review_3aJ4Jb"
+              ]
+            },
+            "slide_AyC9Fy": {
+              "type": "_slide",
+              "name": "t:slide",
+              "settings": {
+                "wrap_in_card": false,
+                "color_scheme": "",
+                "layout_direction": "row",
+                "layout_wrap": "nowrap",
+                "layout_gap": 10,
+                "layout_justify": "flex-start",
+                "layout_align_items": "flex-start",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {
+                "review_yYcUTX": {
+                  "type": "review",
+                  "name": "t:review_display_5",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "display_type": "5",
+                    "wrap_in_card": true,
+                    "color_scheme": "",
+                    "show_card_border": false,
+                    "rating": 4.5,
+                    "image_ratio": "landscape",
+                    "source": "uploaded",
+                    "video_url": "",
+                    "title": "Excellent produit !",
+                    "content": "<p>J'ai découvert ce matelas il y a trois mois et c'est vraiment un changement radical pour moi. Je souffrais de douleurs lombaires chroniques et j'ai essayé tellement de solutions sans résultat. </p><p>Dès la première nuit, j'ai senti la différence. Le soutien est parfait, ni trop ferme ni trop mou. Je dors maintenant profondément et je me réveille sans aucune douleur. Mon partenaire apprécie aussi le fait que les mouvements ne se transmettent pas d'un côté à l'autre du lit. </p><p>C'est un investissement qui en vaut vraiment la peine. Je recommande vivement à tous ceux qui cherchent un vrai confort.</p>",
+                    "author_profile": "shopify://shop_images/iam_os-tgMKcE-Qo5o-unsplash.jpg",
+                    "author": "John Doe",
+                    "date": "11/03/2025",
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "review_yYcUTX"
+              ]
+            },
+            "slide_WLnycw": {
+              "type": "_slide",
+              "name": "t:slide",
+              "settings": {
+                "wrap_in_card": false,
+                "color_scheme": "",
+                "layout_direction": "row",
+                "layout_wrap": "nowrap",
+                "layout_gap": 10,
+                "layout_justify": "flex-start",
+                "layout_align_items": "flex-start",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {
+                "review_3VqQJd": {
+                  "type": "review",
+                  "name": "t:review_display_5",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "display_type": "5",
+                    "wrap_in_card": true,
+                    "color_scheme": "",
+                    "show_card_border": false,
+                    "rating": 4.5,
+                    "image_ratio": "landscape",
+                    "source": "uploaded",
+                    "video_url": "",
+                    "title": "Excellent produit !",
+                    "content": "<p>J'ai découvert ce matelas il y a trois mois et c'est vraiment un changement radical pour moi. Je souffrais de douleurs lombaires chroniques et j'ai essayé tellement de solutions sans résultat. </p><p>Dès la première nuit, j'ai senti la différence. Le soutien est parfait, ni trop ferme ni trop mou. Je dors maintenant profondément et je me réveille sans aucune douleur. Mon partenaire apprécie aussi le fait que les mouvements ne se transmettent pas d'un côté à l'autre du lit. </p><p>C'est un investissement qui en vaut vraiment la peine. Je recommande vivement à tous ceux qui cherchent un vrai confort.</p>",
+                    "author_profile": "shopify://shop_images/iam_os-tgMKcE-Qo5o-unsplash.jpg",
+                    "author": "John Doe",
+                    "date": "11/03/2025",
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "review_3VqQJd"
+              ]
+            },
+            "slide_M3wbNj": {
+              "type": "_slide",
+              "name": "t:slide",
+              "settings": {
+                "wrap_in_card": false,
+                "color_scheme": "",
+                "layout_direction": "row",
+                "layout_wrap": "nowrap",
+                "layout_gap": 10,
+                "layout_justify": "flex-start",
+                "layout_align_items": "flex-start",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {
+                "review_MDiXXz": {
+                  "type": "review",
+                  "name": "t:review_display_5",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "display_type": "5",
+                    "wrap_in_card": true,
+                    "color_scheme": "",
+                    "show_card_border": false,
+                    "rating": 4.5,
+                    "image_ratio": "landscape",
+                    "source": "uploaded",
+                    "video_url": "",
+                    "title": "Excellent produit !",
+                    "content": "<p>J'ai découvert ce matelas il y a trois mois et c'est vraiment un changement radical pour moi. Je souffrais de douleurs lombaires chroniques et j'ai essayé tellement de solutions sans résultat. </p><p>Dès la première nuit, j'ai senti la différence. Le soutien est parfait, ni trop ferme ni trop mou. Je dors maintenant profondément et je me réveille sans aucune douleur. Mon partenaire apprécie aussi le fait que les mouvements ne se transmettent pas d'un côté à l'autre du lit. </p><p>C'est un investissement qui en vaut vraiment la peine. Je recommande vivement à tous ceux qui cherchent un vrai confort.</p>",
+                    "author_profile": "shopify://shop_images/iam_os-tgMKcE-Qo5o-unsplash.jpg",
+                    "author": "John Doe",
+                    "date": "11/03/2025",
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "review_MDiXXz"
+              ]
+            }
+          },
+          "block_order": [
+            "slide_MjHi4c",
+            "slide_AyC9Fy",
+            "slide_WLnycw",
+            "slide_M3wbNj"
+          ]
+        }
+      },
+      "block_order": [
+        "reviews_badge_eNMXBq",
+        "text_mNUdYY",
+        "slider_fT4xkr"
+      ],
+      "name": "t:custom_section",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "color_scheme": "scheme-2",
+        "wrap_in_card": false,
+        "color_scheme_card": "",
+        "section_width": "normal",
+        "layout_type": "flex",
+        "layout_flex_direction_desktop": "column",
+        "layout_grid_columns_desktop": 3,
+        "layout_gap_desktop": 20,
+        "layout_wrap_desktop": "nowrap",
+        "layout_flex_justify_desktop": "center",
+        "layout_flex_align_items_desktop": "center",
+        "same_as_desktop": true,
+        "layout_flex_direction_mobile": "column",
+        "layout_gap_mobile": 20,
+        "layout_wrap_mobile": "nowrap",
+        "layout_flex_justify_mobile": "flex-start",
+        "layout_flex_align_items_mobile": "flex-start",
+        "layout_grid_columns_mobile": 1,
+        "padding_top": 60,
+        "padding_bottom": 80,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "anchor_id": "",
+        "additional_class": ""
+      }
+    },
+    "custom_section_cqBfeQ": {
+      "type": "custom-section",
+      "blocks": {
+        "image_card_renrwU": {
+          "type": "image-card",
+          "name": "t:image_card",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "color_scheme": "scheme-3",
+            "image": "shopify://shop_images/iam_os-tgMKcE-Qo5o-unsplash.jpg",
+            "card_height": "small",
+            "card_height_mobile": "very_small",
+            "card_link": "shopify://collections/tous-les-produits",
+            "image_filter_opacity": 20,
+            "image_filter_color": "#003057",
+            "layout_justify": "flex-end",
+            "layout_align_items": "flex-start",
+            "padding_horizontal": 0,
+            "padding_vertical": 0,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {
+            "text_JqdAAM": {
+              "type": "text",
+              "name": "t:title",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<p>Tous les produits</p>",
+                "text_style": "h4",
+                "paragraph_font_size": "normal",
+                "font_weight": 400,
+                "alignment": "left",
+                "alignment_mobile": "left",
+                "show_read_more": false,
+                "read_more_length": 50,
+                "read_more_text": "Voir plus",
+                "read_less_text": "Voir moins",
+                "truncate": false,
+                "truncate_length": 2,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_JqdAAM"
+          ]
+        },
+        "group_MLA8XL": {
+          "type": "group",
+          "name": "t:group",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "wrap_in_card": false,
+            "card_link": "",
+            "color_scheme": "",
+            "show_card_border": false,
+            "layout_type": "flex",
+            "width_desktop": 60,
+            "layout_direction_desktop": "column",
+            "layout_grid_columns_desktop": 3,
+            "layout_gap_desktop": 20,
+            "layout_wrap_desktop": "nowrap",
+            "layout_justify_desktop": "flex-start",
+            "layout_align_items_desktop": "flex-start",
+            "same_as_desktop": false,
+            "width_mobile": 100,
+            "layout_direction_mobile": "column",
+            "layout_grid_columns_mobile": 1,
+            "layout_gap_mobile": 20,
+            "layout_wrap_mobile": "nowrap",
+            "layout_justify_mobile": "flex-start",
+            "layout_align_items_mobile": "flex-start",
+            "use_global_container_padding": true,
+            "padding_horizontal": 30,
+            "padding_vertical": 30,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {
+            "image_card_UkijgE": {
+              "type": "image-card",
+              "name": "t:image_card",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "color_scheme": "scheme-3",
+                "image": "shopify://shop_images/peux-tu-g-n-rer-une-image-de-matelas-ergonomique-simple-sur-fond-beige.png",
+                "card_height": "very_small",
+                "card_height_mobile": "very_small",
+                "card_link": "shopify://products/matelas",
+                "image_filter_opacity": 20,
+                "image_filter_color": "#003057",
+                "layout_justify": "flex-end",
+                "layout_align_items": "flex-start",
+                "padding_horizontal": 0,
+                "padding_vertical": 0,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_bjwgjY": {
+                  "type": "text",
+                  "name": "t:title",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Matelas ergonomique</p>",
+                    "text_style": "h4",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_bjwgjY"
+              ]
+            },
+            "image_card_d7YPCf": {
+              "type": "image-card",
+              "name": "t:image_card",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "color_scheme": "scheme-3",
+                "image": "shopify://shop_images/le-format-de-limage-nest-pas-carr-et-javais-dis-un-l-ger-ombrage-de-sur-levation-l-il-est-norme.png",
+                "card_height": "very_small",
+                "card_height_mobile": "very_small",
+                "card_link": "shopify://collections/oreillers",
+                "image_filter_opacity": 20,
+                "image_filter_color": "#003057",
+                "layout_justify": "flex-end",
+                "layout_align_items": "flex-start",
+                "padding_horizontal": 0,
+                "padding_vertical": 0,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_FbzhdV": {
+                  "type": "text",
+                  "name": "t:title",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>Oreillers</p>",
+                    "text_style": "h4",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_FbzhdV"
+              ]
+            }
+          },
+          "block_order": [
+            "image_card_UkijgE",
+            "image_card_d7YPCf"
+          ]
+        }
+      },
+      "block_order": [
+        "image_card_renrwU",
+        "group_MLA8XL"
+      ],
+      "name": "t:section_cards_1",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "color_scheme": "scheme-bd470296-2415-4358-a0cc-2b9fd805ffec",
+        "wrap_in_card": false,
+        "color_scheme_card": "",
+        "section_width": "normal",
+        "layout_type": "flex",
+        "layout_flex_direction_desktop": "row",
+        "layout_grid_columns_desktop": 3,
+        "layout_gap_desktop": 20,
+        "layout_wrap_desktop": "nowrap",
+        "layout_flex_justify_desktop": "flex-start",
+        "layout_flex_align_items_desktop": "flex-start",
+        "same_as_desktop": false,
+        "layout_flex_direction_mobile": "column",
+        "layout_gap_mobile": 20,
+        "layout_wrap_mobile": "nowrap",
+        "layout_flex_justify_mobile": "flex-start",
+        "layout_flex_align_items_mobile": "flex-start",
+        "layout_grid_columns_mobile": 1,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "anchor_id": "",
+        "additional_class": ""
+      }
+    },
+    "custom_section_qetdex": {
+      "type": "custom-section",
+      "blocks": {
+        "text_JqyRqD": {
+          "type": "text",
+          "name": "t:title",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "text": "<p>S'abonner à nos e-mails</p>",
+            "text_style": "h2",
+            "paragraph_font_size": "normal",
+            "font_weight": 400,
+            "alignment": "center",
+            "alignment_mobile": "center",
+            "show_read_more": false,
+            "read_more_length": 100,
+            "read_more_text": "Voir plus",
+            "read_less_text": "Voir moins",
+            "truncate": false,
+            "truncate_length": 2,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "text_PkpXrD": {
+          "type": "text",
+          "name": "t:text",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "text": "<p>Recevez en avant première nos offres & promotions tout en restant informés de l'actualité</p>",
+            "text_style": "paragraph",
+            "paragraph_font_size": "large",
+            "font_weight": 400,
+            "alignment": "center",
+            "alignment_mobile": "center",
+            "show_read_more": false,
+            "read_more_length": 100,
+            "read_more_text": "Voir plus",
+            "read_less_text": "Voir moins",
+            "truncate": false,
+            "truncate_length": 2,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "group_cpEwfM": {
+          "type": "group",
+          "name": "t:group",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "wrap_in_card": false,
+            "card_link": "",
+            "color_scheme": "",
+            "show_card_border": false,
+            "layout_type": "flex",
+            "width_desktop": 40,
+            "layout_direction_desktop": "column",
+            "layout_grid_columns_desktop": 3,
+            "layout_gap_desktop": 10,
+            "layout_wrap_desktop": "nowrap",
+            "layout_justify_desktop": "center",
+            "layout_align_items_desktop": "center",
+            "same_as_desktop": false,
+            "width_mobile": 100,
+            "layout_direction_mobile": "column",
+            "layout_grid_columns_mobile": 1,
+            "layout_gap_mobile": 10,
+            "layout_wrap_mobile": "nowrap",
+            "layout_justify_mobile": "flex-start",
+            "layout_align_items_mobile": "flex-start",
+            "use_global_container_padding": true,
+            "padding_horizontal": 30,
+            "padding_vertical": 30,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {
+            "newsletter_signup_98MQp8": {
+              "type": "newsletter-signup",
+              "name": "t:newsletter_signup",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "newsletter_label": "Adresse email",
+                "tag": "newsletter",
+                "margin_top": 10,
+                "margin_bottom": 10,
+                "additional_class": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "newsletter_signup_98MQp8"
+          ]
+        }
+      },
+      "block_order": [
+        "text_JqyRqD",
+        "text_PkpXrD",
+        "group_cpEwfM"
+      ],
+      "name": "t:newsletter_signup",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "color_scheme": "scheme-bd470296-2415-4358-a0cc-2b9fd805ffec",
+        "wrap_in_card": true,
+        "color_scheme_card": "scheme-2",
+        "section_width": "normal",
+        "layout_type": "flex",
+        "layout_flex_direction_desktop": "column",
+        "layout_grid_columns_desktop": 3,
+        "layout_gap_desktop": 20,
+        "layout_wrap_desktop": "nowrap",
+        "layout_flex_justify_desktop": "center",
+        "layout_flex_align_items_desktop": "center",
+        "same_as_desktop": true,
+        "layout_flex_direction_mobile": "row",
+        "layout_gap_mobile": 20,
+        "layout_wrap_mobile": "nowrap",
+        "layout_flex_justify_mobile": "flex-start",
+        "layout_flex_align_items_mobile": "flex-start",
+        "layout_grid_columns_mobile": 1,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "anchor_id": "",
+        "additional_class": ""
+      }
+    },
+    "blog_featured_HYKMa4": {
+      "type": "blog-featured",
+      "blocks": {
+        "group_8nHHdk": {
+          "type": "group",
+          "name": "t:group",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "wrap_in_card": false,
+            "card_link": "",
+            "color_scheme": "",
+            "show_card_border": false,
+            "layout_type": "flex",
+            "width_desktop": 100,
+            "layout_direction_desktop": "row",
+            "layout_grid_columns_desktop": 3,
+            "layout_gap_desktop": 10,
+            "layout_wrap_desktop": "wrap",
+            "layout_justify_desktop": "space-between",
+            "layout_align_items_desktop": "center",
+            "same_as_desktop": true,
+            "width_mobile": 100,
+            "layout_direction_mobile": "column",
+            "layout_grid_columns_mobile": 1,
+            "layout_gap_mobile": 10,
+            "layout_wrap_mobile": "nowrap",
+            "layout_justify_mobile": "flex-start",
+            "layout_align_items_mobile": "flex-start",
+            "use_global_container_padding": true,
+            "padding_horizontal": 30,
+            "padding_vertical": 30,
+            "margin_top": 10,
+            "margin_bottom": 30,
+            "additional_class": ""
+          },
+          "blocks": {
+            "text_7azwii": {
+              "type": "text",
+              "name": "t:title",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<p>Des conseils pour mieux dormir</p>",
+                "text_style": "h3",
+                "paragraph_font_size": "normal",
+                "font_weight": 400,
+                "alignment": "left",
+                "alignment_mobile": "left",
+                "show_read_more": false,
+                "read_more_length": 50,
+                "read_more_text": "Voir plus",
+                "read_less_text": "Voir moins",
+                "truncate": false,
+                "truncate_length": 2,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "button_DaLBQT": {
+              "type": "button",
+              "name": "t:button",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "link": "{{ closest.blog.url }}",
+                "open_in_new_tab": false,
+                "label": "LE BLOG",
+                "button_style": "secondary",
+                "button_shape": "small",
+                "icon": "arrow_forward",
+                "icon_custom": "",
+                "icon_position": "end",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_7azwii",
+            "button_DaLBQT"
+          ]
+        },
+        "article-card": {
+          "type": "_article-card",
+          "static": true,
+          "settings": {
+            "wrap_in_card": false,
+            "color_scheme": "scheme-2",
+            "layout_gap": 15
+          },
+          "blocks": {
+            "image_B8V3pp": {
+              "type": "image",
+              "name": "t:image",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "image": "{{ closest.article.image }}",
+                "show_placeholder": true,
+                "link": "",
+                "image_ratio": "landscape",
+                "image_width_desktop": 100,
+                "image_width_mobile": 100,
+                "enable_rounded_corners": true,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "article_group_h88rKB": {
+              "type": "_article-group",
+              "name": "t:blog_featured_article_info_default",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "wrap_in_card": false,
+                "color_scheme": "scheme-3",
+                "layout_direction_desktop": "column",
+                "layout_gap_desktop": 5,
+                "layout_wrap_desktop": "nowrap",
+                "layout_justify_desktop": "flex-start",
+                "layout_align_items_desktop": "flex-start",
+                "same_as_desktop": true,
+                "layout_direction_mobile": "column",
+                "layout_gap_mobile": 10,
+                "layout_wrap_mobile": "nowrap",
+                "layout_justify_mobile": "flex-start",
+                "layout_align_items_mobile": "flex-start",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_6zbWWR": {
+                  "type": "text",
+                  "name": "t:text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>{{ closest.article.title }}</p>",
+                    "text_style": "h6",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 500,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "text_xeQGxE": {
+                  "type": "text",
+                  "name": "t:text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "{{ closest.article.content }}",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": true,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "text_GP73jY": {
+                  "type": "text",
+                  "name": "t:text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<p>{{ closest.article.excerpt }}</p>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 400,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 50,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "article_group_kWzqVz": {
+                  "type": "_article-group",
+                  "name": "t:blog_featured_author_and_date_default",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "wrap_in_card": false,
+                    "color_scheme": "scheme-2",
+                    "layout_direction_desktop": "row",
+                    "layout_gap_desktop": 10,
+                    "layout_wrap_desktop": "nowrap",
+                    "layout_justify_desktop": "space-between",
+                    "layout_align_items_desktop": "center",
+                    "same_as_desktop": true,
+                    "layout_direction_mobile": "column",
+                    "layout_gap_mobile": 10,
+                    "layout_wrap_mobile": "nowrap",
+                    "layout_justify_mobile": "flex-start",
+                    "layout_align_items_mobile": "flex-start",
+                    "margin_top": 10,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {
+                    "text_waf6EN": {
+                      "type": "text",
+                      "name": "t:text",
+                      "settings": {
+                        "show_on_display": "desktop_and_mobile",
+                        "text": "<p><em>{{ closest.article.author }}</em></p>",
+                        "text_style": "paragraph",
+                        "paragraph_font_size": "normal",
+                        "font_weight": 400,
+                        "alignment": "left",
+                        "alignment_mobile": "left",
+                        "show_read_more": false,
+                        "read_more_length": 50,
+                        "read_more_text": "Voir plus",
+                        "read_less_text": "Voir moins",
+                        "truncate": false,
+                        "truncate_length": 2,
+                        "margin_top": 0,
+                        "margin_bottom": 0,
+                        "additional_class": ""
+                      },
+                      "blocks": {}
+                    },
+                    "article_date_tgjfbd": {
+                      "type": "_article-date",
+                      "name": "t:article_date",
+                      "settings": {
+                        "show_on_display": "desktop_and_mobile",
+                        "margin_top": 0,
+                        "margin_bottom": 0,
+                        "additional_class": ""
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_waf6EN",
+                    "article_date_tgjfbd"
+                  ]
+                }
+              },
+              "block_order": [
+                "text_6zbWWR",
+                "text_xeQGxE",
+                "text_GP73jY",
+                "article_group_kWzqVz"
+              ]
+            }
+          },
+          "block_order": [
+            "image_B8V3pp",
+            "article_group_h88rKB"
+          ]
+        }
+      },
+      "block_order": [
+        "group_8nHHdk"
+      ],
+      "name": "t:blog_featured",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "color_scheme": "scheme-bd470296-2415-4358-a0cc-2b9fd805ffec",
+        "blog": "news",
+        "max_articles": 3,
+        "layout_type": "grid",
+        "grid_columns": 3,
+        "grid_columns_mobile": "1",
+        "slider_items": 4,
+        "slider_items_mobile": "2",
+        "show_arrows": true,
+        "arrows_button_style": "secondary",
+        "show_pagination": false,
+        "rewind": false,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "anchor_id": "",
+        "additional_class": ""
+      }
+    }
+  },
+  "order": [
+    "image_banner_VXNP89",
+    "collection_featured_JXRpw3",
+    "marquee_UXVQjn",
+    "custom_section_wxUWmx",
+    "custom_section_NkHGLz",
+    "custom_section_7dEdBr",
+    "custom_section_cqBfeQ",
+    "custom_section_qetdex",
+    "blog_featured_HYKMa4"
+  ]
+}
