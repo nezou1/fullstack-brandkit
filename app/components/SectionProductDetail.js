@@ -31,9 +31,12 @@ export default function SectionProductDetail({ scheme, headingFont, bodyFont, la
         <div className="sm:w-[58%] p-4 sm:p-5 flex flex-col justify-center">
           <div className="flex items-center gap-1.5 mb-2">
             <StarRating scheme={scheme} filled={5} />
-            <span className="text-xs" style={{ color: scheme.foreground + "88" }}>(87 {lang === "fr" ? "avis" : "reviews"})</span>
+            <span className="text-xs" style={{ color: scheme.foreground + "88" }}>
+              (87 {lang === "fr" ? "avis" : "reviews"})
+            </span>
           </div>
-          <h3 className="text-base sm:text-lg font-bold mb-1 leading-tight" style={{ fontFamily: `'${headingFont}', serif`, color: scheme.foreground }}>
+          <h3 className="text-base sm:text-lg font-bold mb-1 leading-tight"
+            style={{ fontFamily: `'${headingFont}', serif`, color: scheme.foreground }}>
             {lang === "fr" ? "Sérum éclat vitamine C" : "Vitamin C Glow Serum"}
           </h3>
           <span className="text-base font-bold mb-2" style={{ color: scheme.foreground }}>
@@ -53,7 +56,8 @@ export default function SectionProductDetail({ scheme, headingFont, bodyFont, la
               </span>
             ))}
           </div>
-          <p className="text-xs leading-relaxed mb-3" style={{ fontFamily: `'${bodyFont}', sans-serif`, color: scheme.foreground + "77" }}>
+          <p className="text-xs leading-relaxed mb-3"
+            style={{ fontFamily: `'${bodyFont}', sans-serif`, color: scheme.foreground + "77" }}>
             {lang === "fr"
               ? "Formule concentrée en vitamine C pure pour un teint éclatant. Application matin et soir sur peau propre."
               : "Pure vitamin C formula for a radiant complexion. Apply morning and evening on clean skin."}
@@ -65,10 +69,13 @@ export default function SectionProductDetail({ scheme, headingFont, bodyFont, la
             ))}
           </div>
           {/* Add to cart button */}
-          <button className="w-full py-2.5 rounded-lg text-xs font-medium text-center border-none cursor-default" style={{
+          <button className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-medium border-none cursor-default" style={{
             background: scheme.primary_button_background,
             color: scheme.primary_button_text,
           }}>
+            <span className="material-symbols-rounded" style={{ fontSize: 16, fontVariationSettings: "'FILL' 0, 'wght' 300" }}>
+              shopping_bag
+            </span>
             {lang === "fr" ? "Ajouter au panier" : "Add to cart"}
           </button>
         </div>

@@ -277,8 +277,12 @@ export default function BrandKit() {
       settings.current.icon_weight = iconWeight;
 
       // Write back to ZIP
-      zip.file("config/settings_data.json", JSON.stringify(settings, null, 2));
-      const blob = await zip.generateAsync({ type: "blob" });
+      zip.file("config/settings_data.json", JSON.stringify(settings));
+      const blob = await zip.generateAsync({
+        type: "blob",
+        compression: "DEFLATE",
+        compressionOptions: { level: 9 },
+      });
       setThemeZip(blob);
       setThemeStatus("done");
     } catch (err) {
@@ -868,7 +872,7 @@ export default function BrandKit() {
               const isEnabled = enabledSchemes.includes(sk);
               return (
                 <button key={sk} onClick={() => setPreviewScheme(sk)}
-                  className={`border rounded-xl p-3 text-center cursor-pointer transition-all ${isActive ? "border-[#1a1a1a] ring-2 ring-gray-100" : isEnabled ? "border-gray-200 hover:border-[#1a1a1a]" : "border-gray-100 opacity-40"}`}
+                  className={`border rounded-xl p-3 text-center cursor-pointer transition-all ${isActive ? "border-[#1a1a1a] shadow-[0_0_0_1px_#1a1a1a]" : isEnabled ? "border-gray-200 hover:border-[#1a1a1a]" : "border-gray-100 opacity-40"}`}
                   style={{ background: "#fff" }}>
                   <div className="flex gap-0.5 mb-2.5">
                     <div className="flex-1 h-6 rounded-l-md" style={{ background: s.background, border: s.background === "#ffffff" ? "1px solid #eee" : "none" }} />

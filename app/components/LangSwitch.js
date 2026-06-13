@@ -1,8 +1,18 @@
 export default function LangSwitch({ lang, setLang }) {
   return (
-    <div className="absolute top-4 right-4 flex rounded-full overflow-hidden border border-gray-200 z-10">
+    <div className="absolute top-4 right-4 z-10 flex items-center gap-0.5 p-[3px] bg-white border border-gray-200 rounded-lg shadow-sm">
       {["fr", "en"].map((l) => (
-        <button key={l} onClick={() => setLang(l)} className={`px-3.5 py-1.5 text-xs border-none cursor-pointer transition-colors ${lang === l ? "bg-[#1a1a1a] text-white" : "bg-white text-gray-400"}`}>{l.toUpperCase()}</button>
+        <button
+          key={l}
+          onClick={() => setLang(l)}
+          className={`relative px-2 py-0.5 text-[11px] font-medium rounded-md transition-all cursor-pointer border-none outline-none focus:outline-none ${
+            lang === l
+              ? "bg-[#1a1a1a] text-white"
+              : "bg-transparent text-gray-400 hover:text-gray-700"
+          }`}
+        >
+          {l.toUpperCase()}
+        </button>
       ))}
     </div>
   );
